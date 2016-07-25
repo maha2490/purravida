@@ -1,3 +1,70 @@
 // Place all the styles related to the static controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// ____________________HOME PAGE HEADER______________________________________
+.home_header {
+	background-color: #EEE;
+	height: 60px;
+}
+
+.home_sm_icons {
+	padding-top: 1%;
+	font-size: 100%;
+
+}
+
+.find_us{
+	display: inline;
+	padding-right: 10%;
+}
+
+.fa-instagram {
+	padding-right: 10%;
+	color: #545A5B;
+}
+.fa-facebook-square {
+	padding-right: 10%;
+	color: #545A5B;
+}
+.fa-snapchat {
+	padding-right: 10%;
+	color: #545A5B;
+}
+
+// ____________________HOME PAGE MAIN________________________________________
+html, body{
+  height: 100%;
+}
+
+.about_j {
+	margin-top: 15%;
+	padding: 20%;
+	color: #545A5B;
+}
+
+.su_home {
+	margin-top: 50%;
+	display: inline-block;
+	background-color: #EEE;
+	width: 30%;
+}
+.li_home {
+	margin-top: 90%;
+    display: inline-block;
+    margin-left: -31%;
+    padding-left: 24px;
+    padding-right: 18px;
+    background-color: #EEE;
+    width: 30%;
+}
+
+.home_page_body {
+	background-color: #E1E2D6;
+	height: 100%;
+}
+
+.container-fluid {
+	height: 100%;
+	width: 100%;
+}
