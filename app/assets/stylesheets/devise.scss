@@ -77,3 +77,96 @@ html, body {
 	margin-top: 3%;
     margin-left: 10%;
 }
+
+
+// USER EDIT ______________________________________________________________
+
+.form_header_edit {
+	text-align: center;
+	font-size: 28px;
+	padding-right: 18px;
+    margin-top: 5%;
+}
+
+.edit_form_boxes_right {
+	display: inline-block;
+	width: 35%;
+	margin-left: 10%;
+}
+.edit_form_boxes_left {
+	display: inline-block;
+	width: 35%;
+	margin-left: 4%;
+}
+
+.edit_profile_form_field {
+	height: 52px;
+    margin-top: 6%;
+    width: 108%;
+}
+
+.edit_name {
+	width: 88%;
+}
+.edit_email {
+	display: inline-block;
+	width: 88%;
+}
+
+.box_border {
+	border: 2px solid;
+    border-radius: 25px;
+    margin-top: 4%;
+    padding: 3%;
+    background-color: rgba(238,238,238,0.3);
+
+}
+.edit_password {
+	width: 88%;
+}
+
+.edit_instructions{
+	margin-left: 3%;
+}
+
+.pw_instructions {
+	text-align:center;
+}
+
+.edit_submit {
+	width: 47%;
+    margin-left: 8%;
+    margin-top: 5%;
+    height: 53px;
+}
+
+.edit_side_buttons {
+	width: 65%;
+	height: 52px;
+	margin-left: 17%;
+	margin-top: 7%;
+}
+.side_nav_container{
+	width: 100%;
+    margin-top: 18%;
+}
+
+.edit_side_button_text{
+	text-align: center;
+}
+
+.header_cancel {
+	text-align: center;
+    font-size: 20px;
+    padding-right: 18px;
+}
+
+.edit_cancel_button {
+	margin-left: 36%;
+    height: 53px;
+    width: 25%;
+}
+
+.cancel_note{
+	text-align: center;
+}

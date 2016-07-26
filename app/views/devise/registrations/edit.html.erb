@@ -1,43 +1,174 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<!-- edit.html.erb -->
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= devise_error_messages! %>
+<div class="container-fluid">
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
 
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-  <% end %>
+<!--_____ HEADER LOGO/ICONS _______________________________________________________________________-->
 
-  <div class="field">
-    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-    <% if @minimum_password_length %>
-      <br />
-      <em><%= @minimum_password_length %> characters minimum</em>
-    <% end %>
-  </div>
+  <header>
+    <div class="row home_header">
+      <div class="col-md-8">
+        <p> <h3> purravida </h3> </p>
+      </div>
+      <div class="col-md-4 other_sm_icons">
+        <a href="https://www.instagram.com/kit_and_kaboodle/?hl=en"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/rachel.mahan.9"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+        <i class="fa fa-snapchat fa-2x" aria-hidden="true"></i>
+      </div>
+    </div>
+  </header>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
 
-  <div class="field">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "off" %>
-  </div>
+  <div class="edit_user">
+    <div class="row"> 
+      <div class="col-md-1"></div>
 
-  <div class="actions">
-    <%= f.submit "Update" %>
-  </div>
-<% end %>
 
-<h3>Cancel my account</h3>
+  <!--_____ EDIT USER FIELDS  ____________________________________________________________________-->
+  
 
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+      <div class="col-md-7"> <!-- 7 has 3 rows: 5/7, 7/5, 12-->
 
-<%= link_to "Back", :back %>
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+
+        <div class="change_profile_pic">
+          pic area
+        </div>
+        <p class="form_header_edit"> Edit your profile </p>
+        
+        
+        <div class="form-group box_border">
+        <%= devise_error_messages! %>
+        
+
+  <!--_____ EDIT PIC/NAME/EMAIL FIELDS_____________________________________________-->
+
+
+          <div class="row">
+
+            <div class="col-md-6">
+              <div class="field edit_name">
+                <%= f.text_field :name, autofocus: true, class: "form-control edit_profile_form_field", placeholder: "name" %>
+              </div>
+              <div class="field edit_email">
+                <%= f.email_field :email, class: "form-control edit_profile_form_field", autofocus: true, placeholder: "email" %>
+
+                <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+                    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+                <% end %>
+              </div>
+            </div>
+              
+            <div class="col-md-6"></div>
+              <br>
+              <br>
+              <%= f.label :name, class:"edit_instructions" %>
+              <br>
+              <br>
+              <br>
+              <%= f.label :email, class:"edit_instructions" %>
+          </div> <!-- top name/email field row -->
+
+
+  <!--_____ EDIT PW FIELDS  ______________________________________________________-->
+          <div class="row">
+              <div class="col-md-6">
+                
+                <div class="field edit_password">
+
+                  <%= f.password_field :password, class: "form-control edit_profile_form_field", autocomplete: "off", placeholder: "6 character minimum" %>
+                </div>
+              
+
+                <div class="field edit_password"> 
+                  <%= f.password_field :password_confirmation, class: "form-control edit_profile_form_field", autocomplete: "off" %>
+                </div>
+
+                <div class="field edit_password">
+                  <%= f.password_field :current_password, class: "form-control edit_profile_form_field", autocomplete: "off" %>
+                </div>
+              </div> <!-- col_md-6 -->
+
+              <div class="col-md-6">
+                <br>
+                <%= f.label :password, class:"pw_instructions" %> <i>(leave blank if you don't want to change it)</i>
+                <% if @minimum_password_length %>
+                  <% end %>
+
+                <br>
+                <br>
+                <br>
+                 <%= f.label :password_confirmation %>
+
+                 <br>
+                 <br>
+                 <br>
+                 <%= f.label :current_password, class: "pw_instructions" %> <i>(current password to confirms your changes)</i><br />
+
+              </div>
+          </div> <!-- row pw box -->
+
+
+  <!--_____ CONFIRM BUTTON _____________________________________________________-->
+          <div class="row">
+            <div class="col-md-6">
+              
+                  <div class="actions">
+                      <%= f.submit "save changes", class:"btn btn-default btn-sm edit_submit" %>
+                  </div>
+                  <% end %>
+            </div> <!-- col-md-6-->
+
+            <div class="col-md-6">
+              
+            </div>
+          </div> <!-- confirm row -->
+        </div> <!--  form-group -->
+      </div> <!-- col-md-7 -->
+    
+
+<!--_____ SIDE NAV BUTTONS ____________________________________________________________________-->  
+      <div class="side_nav_container">
+        <div class="col-md-4">
+           <div class="actions">
+              <button class="btn btn-default btn-lg edit_side_buttons">sitter settings</button>
+              <p class="edit_side_button_text">manage your sitter profile</p>
+            </div>
+            <div class="actions">
+              <button class="btn btn-default btn-lg edit_side_buttons">home settings</button>
+              <p class="edit_side_button_text">homeshare prefrences</p>
+            </div>
+        </div>
+      </div>
+    </div> <!-- main row -->
+
+
+<!--_____  CANCEL PROFILE ____________________________________________________________________-->  
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-7">
+        <p class="header_cancel">Cancel my account</p>
+            <div class="box_border">
+                <p class="cancel_note"> we hope you don't want to go. if so, click here to delete your Purravida user profile. </p> 
+                <p><%= button_to "cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class:"btn btn-default btn-sm edit_cancel_button" %></p>
+            </div>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </div> <!-- edit user -->
+</div> <!-- container -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
