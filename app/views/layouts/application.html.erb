@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Purravida</title>
     <%= csrf_meta_tags %>
 
@@ -25,9 +26,11 @@
             <li>
               <a href="../help/">Help</a>
             </li>
-            <li>
-              <a href="http://news.bootswatch.com">Blog</a>
-            </li>
+             <% if current_user %>	
+	            <li>
+	            	<%= link_to("Log out", destroy_user_session_path, method: :delete) %>
+	            </li>
+	        <% end %>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
