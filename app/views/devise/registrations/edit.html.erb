@@ -131,11 +131,12 @@
       <div class="side_nav_container">
         <div class="col-md-4">
            <div class="actions">
-              <button class="btn btn-default btn-lg edit_side_buttons">sitter settings</button>
+              <!-- <button class="btn btn-default btn-lg edit_side_buttons">sitter settings</button> -->
+              <%= link_to("sitter settings", sitter_settings_path, class:"btn btn-default btn-lg edit_side_buttons" ) %>
               <p class="edit_side_button_text">manage your sitter profile</p>
             </div>
             <div class="actions">
-              <button class="btn btn-default btn-lg edit_side_buttons">home settings</button>
+              <%= link_to("home settings", home_settings_path, class:"btn btn-default btn-lg edit_side_buttons" ) %>
               <p class="edit_side_button_text">homeshare prefrences</p>
             </div>
         </div>

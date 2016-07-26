@@ -1,34 +1,23 @@
 <!-- index.html.erb -->
 
-<div class="container-fluid">
-	<header>
-		<div class="row home_header">
-		 	<div class="col-md-8"></div>
-		 	<div class="col-md-4 home_sm_icons">
-		 		<p class="find_us"> find us on </p> 
-		 		<a href="https://www.instagram.com/kit_and_kaboodle/?hl=en"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-		 		<a href="https://www.facebook.com/rachel.mahan.9"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
-		 		<i class="fa fa-snapchat fa-2x" aria-hidden="true"></i>
-		 	</div>
-		</div>
-	</header>
-	<main>
-		<div class="row home_page_body">
-			<div class="col-md-8">
-				<div class="jumbotron about_j">
-				  <h1>purravida</h1>
-				  <img src="/assets/purravida-logo.gif" alt="logo" class="purravida_logo">
-				  <p>connecting cat loving travelers</p>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<%= link_to("sign up", new_user_registration_path, class:"btn btn-default btn-lg su_home") %>
-				<%= link_to("log in", new_user_session_path, class:"btn btn-default btn-lg li_home" ) %>
-			</div>
-		</div>
-	</main>
 
-</div> <!--  container-fluid -->
+	
+<div class="row home_page_body">
+	<div class="col-md-8 col-xs-12">
+		<div class="jumbotron about_j">
+			<h1>purravida</h1>
+			<img src="/assets/purravida-logo.gif" alt="logo" class="purravida_logo">
+			<p>connecting cat loving travelers</p>
+		</div>
+	</div>
+	<div class="col-md-4 col-xs-12">
+		<%= link_to("sign up", new_user_registration_path, class:"btn btn-default btn-lg su_home") %>
+		<%= link_to("log in", new_user_session_path, class:"btn btn-default btn-lg li_home" ) %>
+	</div>
+</div>
+	
+
+
 
 
 
