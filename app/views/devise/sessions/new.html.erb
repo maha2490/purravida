@@ -1,71 +1,64 @@
+<!-- LOG IN sessions/new.html.erb -->
 
-<div class="container-fluid">
-  
 
-<!--_____ HEADER LOGO/ICONS _______________________________________________________________________-->
-
-  <header>
-    <div class="row home_header">
-      <div class="col-md-8">
-        <p> <h3> purravida </h3> </p>
-      </div>
-      <div class="col-md-4 other_sm_icons">
-        <a href="https://www.instagram.com/kit_and_kaboodle/?hl=en"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com/rachel.mahan.9"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
-        <i class="fa fa-snapchat fa-2x" aria-hidden="true"></i>
-      </div>
-    </div>
-  </header>
-
- <!--_______________________________________________________________________________________________-->        
-
-  <div class="row main_new_user">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-      <%= form_for(resource, as: resource_name, url: session_path(resource_name), class: "form-horizontal") do |f| %>  
-        <p class="form_header"> sign in </p>
+<div class="row main_new_user">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name), class: "form-horizontal") do |f| %>  
+      <p class="form_header"> sign in </p>
 
 
 <!--_____ SIGN IN FORM BOXES ________________________________________________________________________-->
+      <div class="form-group">
+        <div class="row">
 
-        <div class="form-group">
-          <div class="row">
-
-            <div clas="col-md-12">
-             <div class="field login_form_box_right">
-              <%= f.email_field :email, autofocus: true, class: "form-control log_in_form_field", placeholder: "email" %>
-             </div>
-            
-              <div class="field login_form_box_left">
-              <%= f.password_field :password, autocomplete: "off", class: "form-control log_in_form_field" %>
-              </div>
-              <% if devise_mapping.rememberable? -%>
-              <div class="field remember_me">
-                <%= f.check_box :remember_me %>
-                <%= f.label :remember_me %>
-              </div>
-            </div> <!-- col-md-12 -->
-          </div> <!-- row sign up input -->
+          <div clas="col-md-12">
+           <div class="field login_form_box_right">
+            <%= f.email_field :email, autofocus: true, class: "form-control log_in_form_field", placeholder: "email" %>
+           </div>
+          
+            <div class="field login_form_box_left">
+            <%= f.password_field :password, autocomplete: "off", class: "form-control log_in_form_field" %>
+            </div> 
+            <% if devise_mapping.rememberable? -%> 
+          </div> <!-- col-md-12 -->
+        </div> <!-- row sign up input -->
 
 
 <!--_____ LOG IN SUBMIT ___________________________________________________________________________-->
-
-          <div class="row"> <!-- for button & remember me -->
-            <div class="col-md-12">
-              <div class="actions">
-                <%= f.submit "Log in", class:"btn btn-default sign_up_submit" %>
-              </div>
-              <% end %>  
-              <%= render "devise/shared/links" %>   
+        <div class="row"> <!-- for button & remember me -->
+          <div class="col-md-6">
+            <div class="actions">
+              <%= f.submit "log in", class:"btn btn-default btn-lg sign_up_submit" %>
             </div>
-          </div><!-- row sign up submit -->
-        </div> <!-- form group -->
-      <% end -%>
-    </div> <!-- col-md-8-->
- <!--_______________________________________________________________________________________________-->
-             
-    <div class="col-md-2"></div>
-  </div> <!-- row main-->
-</div> <!-- container -->
+            <% end %>  
+              
+          </div>
+          <div class="col-md-6">
+            <%= link_to "forgot password ?", new_password_path(resource_name), class:"btn btn-default btn-lg sign_up_fpassword"  %>
+            
+          </div>
+
+
+        </div><!-- row sign up submit -->
+      </div> <!-- form group -->
+    
+  </div> <!-- col-md-8-->
+
+  
+<!--_______________________________________________________________________________________________-->
+           
+  <div class="col-md-2">
+    <div class="container sign_in_radio_boxes">
+       <div class="field remember_me">
+              <%= f.check_box :remember_me %>
+              <%= f.label :remember_me %>
+        </div>
+    
+    </div>
+  </div>
+  <% end -%>
+</div> <!-- row main-->
+
 
 

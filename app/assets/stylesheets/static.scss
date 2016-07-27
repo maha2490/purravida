@@ -8,10 +8,15 @@
 	height: 60px;
 }
 
+.purravida_logo_header {
+	display: inline-block;
+    width: 39%;
+    margin-top: 6%;
+}
+
 .home_sm_icons {
 	padding-top: 1%;
 	font-size: 100%;
-
 }
 
 .find_us{
@@ -39,25 +44,28 @@ html, body{
 }
 
 .about_j {
-	margin-top: 15%;
+	margin-top: 25%;
 	padding: 20%;
 	color: #545A5B;
 }
 
 .su_home {
-	margin-top: 50%;
+	margin-top: 80%;
+	margin-right: -9%;
 	display: inline-block;
 	background-color: #EEE;
 	width: 30%;
+	color: #545A5B;
 }
 .li_home {
-	margin-top: 90%;
+	margin-top: 127%;
     display: inline-block;
-    margin-left: -31%;
+    margin-left: -22%;
     padding-left: 24px;
     padding-right: 18px;
     background-color: #EEE;
     width: 30%;
+    color: #545A5B;
 }
 
 .home_page_body {
@@ -78,6 +86,20 @@ html, body{
     color:  #545A5B;
 }
 
+.purravida_tagline {
+	font-size: 100%;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+.purravida_about {
+	font-size: 18px;
+	margin-top: 4%;
+    margin-bottom: -14%;
+}
+
 h1 {
 	display:inline-block;
+	margin-top: -8%;
+	margin-bottom: -8%;
 }

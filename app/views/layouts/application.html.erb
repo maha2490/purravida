@@ -14,7 +14,11 @@
   	<div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="/" class="navbar-brand">purravida</a>
+          <!-- <a href="/" class="navbar-brand">purravida</a> -->
+          <% if current_user %>
+            <span><img src="/assets/purravida-logo.gif" alt="logo" class="purravida_logo_header">
+            </span>
+          <% end %>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -23,32 +27,93 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav"> 
-            <li>
-              <a href="../help/">Help</a>
-            </li>
-             <% if current_user %>	
-	            <li>
-	            	<%= link_to("Log out", destroy_user_session_path, method: :delete) %>
-	            </li>
-	        <% end %>
+           <!-- any left navbar content add here -->
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li>
-            	<a href="https://www.instagram.com/kit_and_kaboodle/?hl=en">
-            		<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-            	</a>
-            </li>
-            <li>
-            	<a href="https://www.facebook.com/rachel.mahan.9">
-            		<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-            	</a>
-            </li>
-            <li>
-            	<a href="https://www.facebook.com/rachel.mahan.9">
-            		<i class="fa fa-snapchat fa-2x" aria-hidden="true"></i>
-            	</a>
-            </li>
+
+
+<!--_____ SIGNED IN HEADER BAR _____________________________________________________________________-->
+             <% if current_user %>  
+               <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">messages 
+                  <span><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></span>
+                  <!-- <span class="caret"></span></a> -->
+                    <ul class="dropdown-menu" aria-labelledby="download">
+                      <li><a href="http://jsfiddle.net/bootswatch/ndax7sh7/">inbox</a></li>
+                      <li class="divider"></li>
+                    </ul>
+               </li>
+               <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">on the go
+                  <span><i class="fa fa-globe fa-lg" aria-hidden="true"></i></span>
+                  <!-- <span class="caret"></span></a> -->
+                    <ul class="dropdown-menu" aria-labelledby="download">
+                      <li>
+                        <a href="http://jsfiddle.net/bootswatch/ndax7sh7/">housing</a>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <a href="http://jsfiddle.net/bootswatch/ndax7sh7/">saved swaps</a>
+                      </li>
+                      <li class="divider"></li>
+                    </ul>
+               </li>
+               <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">at home
+                  <span><i class="fa fa-home fa-lg" aria-hidden="true"></i></span>
+                  <!-- <span class="caret"></span></a> -->
+                    <ul class="dropdown-menu" aria-labelledby="download">
+                      <li>
+                        <a href="http://jsfiddle.net/bootswatch/ndax7sh7/">sitter preferences</a>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <a href="http://jsfiddle.net/bootswatch/ndax7sh7/">find local sitters</a>
+                      </li>
+                      <li class="divider"></li>
+                    </ul>
+               </li>
+               <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">profile
+                  <span><i class="fa fa-user fa-lg" aria-hidden="true"></i></span>
+                  <!-- <span class="caret"></span></a> -->
+                    <ul class="dropdown-menu" aria-labelledby="download">
+                      <li>
+                        <%= link_to("edit profile", edit_user_registration_path) %>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <%= link_to("log out", destroy_user_session_path, method: :delete) %>
+                      </li>
+                      <li class="divider"></li>
+                    </ul>
+               </li>
+               
+             
+
+
+<!--_____ SIGNED OUT HEADER BAR ____________________________________________________________________-->
+             <% else %>
+              <li> 
+                <a href="../help/">follow us on</a>
+              </li>
+              <li>
+              	<a href="https://www.instagram.com/kit_and_kaboodle/?hl=en">
+              		<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+              	</a>
+              </li>
+              <li>
+              	<a href="https://www.facebook.com/rachel.mahan.9">
+              		<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+              	</a>
+              </li>
+              <li>
+              	<a href="https://www.facebook.com/rachel.mahan.9">
+              		<i class="fa fa-snapchat fa-2x" aria-hidden="true"></i>
+              	</a>
+              </li>
+             <% end %>
           </ul>
 
         </div>
