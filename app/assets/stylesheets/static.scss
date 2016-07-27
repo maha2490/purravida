@@ -43,6 +43,10 @@ html, body{
   background-color: #E1E2D6;
 }
 
+.btn-lg {
+	background-color: rgba(134,187,191,0.7);
+}
+
 .about_j {
 	margin-top: 25%;
 	padding: 20%;
@@ -56,6 +60,7 @@ html, body{
 	background-color: #EEE;
 	width: 30%;
 	color: #545A5B;
+	background-color: rgba(134,187,191,0.7);
 }
 .li_home {
 	margin-top: 127%;
@@ -66,6 +71,7 @@ html, body{
     background-color: #EEE;
     width: 30%;
     color: #545A5B;
+    background-color: rgba(134,187,191,0.7); // button blue
 }
 
 .home_page_body {
@@ -89,7 +95,7 @@ html, body{
 .purravida_tagline {
 	font-size: 100%;
     display: inline-block;
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 .purravida_about {
