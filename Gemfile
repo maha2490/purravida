@@ -10,6 +10,8 @@ gem 'twitter-bootstrap-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-sass'
 
+gem 'paperclip', '~> 4.1'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0'

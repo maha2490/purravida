@@ -16,7 +16,10 @@
         <div class="navbar-header">
           <!-- <a href="/" class="navbar-brand">purravida</a> -->
           <% if current_user %>
-            <span><img src="/assets/purravida-logo.gif" alt="logo" class="purravida_logo_header">
+            <span>
+             <%= link_to("/") do %>
+                <%= image_tag 'purravida-logo.gif', alt: 'purravida, connecting cat-loving travelers', class: "purravida_logo_header"%>
+             <% end %> 
             </span>
           <% end %>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
@@ -76,7 +79,11 @@
                </li>
                <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">profile
-                  <span><i class="fa fa-user fa-lg" aria-hidden="true"></i></span>
+                  
+                    <%= image_tag(current_user.avatar.url(:thumb), class:"round-image-50") %>
+                       
+                  
+                  <!-- <span><i class="fa fa-user fa-lg" aria-hidden="true"></i></span> -->
                   <!-- <span class="caret"></span></a> -->
                     <ul class="dropdown-menu" aria-labelledby="download">
                       <li>
@@ -115,12 +122,12 @@
               </li>
              <% end %>
           </ul>
-
         </div>
       </div>
     </div>  
     <div class="container">
     	<%= yield %>
+
     </div>
   </body>
 </html>
