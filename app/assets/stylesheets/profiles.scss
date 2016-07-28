@@ -1,11 +1,49 @@
-// Place all the styles related to the profiles controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 
 // HOME SETTINGS __________________________________________________________
+
 .after_navbar {
 	// Height of the navbar
 		//       |
 	margin-top: 61px;
+}
+.round-image-125 {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 25px; 
+    text-align: center;
+    vertical-align: top;
+    width: 90%;
+    margin-top: 23%;
+}
+.box_border_2 {
+	border: 2px solid;
+    border-radius: 25px;
+    margin-top: 4%;
+    margin-left: 7%;
+    padding: 3%;
+    background-color: rgba(238, 238, 238, 0.3);
+    width: 90%;
+}
+.home_profile_heading {
+	text-align: center; 
+    font-size: 226%;
+    margin-top: 4%;
+}
+.home_profile_left_container{
+	margin-left: 16%;
+}
+#display_user_name_hprofile{
+	text-align: center;
+    display: inherit;
+    font-size: 27px;
+    margin-right: 11%;
+    margin-top: 2%;
+}
+.new_listing_button {
+	width: 83%;
+	height: 52px;
+	background-color: rgba(134,187,191,0.7);
+	padding-top: 6%;
+	font-size: 91%;
+	margin-top: 5%;
 }

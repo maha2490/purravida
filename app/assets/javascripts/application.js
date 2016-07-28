@@ -17,8 +17,12 @@
 //= require_tree .
 
 $(document).on("turbolinks:load", function(){
-	
-
+	$('.upload-btn').on('change', function(event){
+		
+		var files = event.target.files;
+		var the_file = files[0].name;
+		$('.file_upload_area').text(the_file);
+	});
 
 
 });

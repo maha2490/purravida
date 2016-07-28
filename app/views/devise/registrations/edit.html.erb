@@ -13,7 +13,7 @@
               <%= f.text_field :name, autofocus: true, class: "form-control edit_profile_form_field", placeholder: "name" %>
             </div>
           </div>
-          <div class="form-group">
+          <div class="form-group fileinput">
             <%= f.label :avatar, "Photo", class: "col-lg-1 control-label" %>
             <div class="col-lg-11">
               <div class="input-group edit_profile_form_field">
@@ -22,10 +22,11 @@
                     <%= f.file_field :avatar, class: 'upload-btn' %>
                   </label>
                 </span>
-                <input class="form-control file_upload_area" readonly="" type="text">
+                <div class="form-control file_upload_area" readonly="" type="text"></div>
               </div>
             </div>
           </div>
+
           <div class="form-group">
             <%= f.label :email, class: "col-lg-1 control-label" %>
             <div class="col-lg-11">
@@ -74,11 +75,11 @@
          <div class="actions">
             <!-- <button class="btn btn-default btn-lg edit_side_buttons">sitter settings</button> -->
             <%= link_to("sitter settings", sitter_settings_path, class:"btn btn-default btn-lg edit_side_buttons" ) %>
-            <p class="edit_side_button_text">your sitter preferences</p>
+            <p class="edit_side_button_text"></p>
           </div>
           <div class="actions">
             <%= link_to("home settings", home_settings_path, class:"btn btn-default btn-lg edit_side_buttons" ) %>
-            <p class="edit_side_button_text">your homeshare prefrences</p>
+            <p class="edit_side_button_text"></p>
           </div>
       </div>
     </div>
@@ -99,6 +100,11 @@
     <div class="col-md-4"></div>
   </div>
 </div> <!-- edit user -->
+
+
+
+
+
 
 
 
