@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyText
+  location: MyString
+  beds: 1
+  baths: 1
+  sqft: MyString
+  integer: MyString
+  pets: MyString
+  capacity: MyString
+  is_active: false
+  user_id: 1
+
+two:
+  description: MyText
+  location: MyString
+  beds: 1
+  baths: 1
+  sqft: MyString
+  integer: MyString
+  pets: MyString
+  capacity: MyString
+  is_active: false
+  user_id: 1

@@ -1,10 +1,50 @@
 class ProfilesController < ApplicationController
 
-	def sitter_settings
-		render :sitter_settings
+	def user_profile
+		@user_id = current_user.id
+
+		@name = current_user.name
+
+		@email = current_user.email
+		render :user_profile	
 	end
 
-	def home_settings
-		render :home_settings
+#____SITTER VIEWS ___________________________________________________________________
+
+	def index
+		@active_sitters = 
+
+		render :index
+	end
+
+	def show
+		# show updated user profile w/ sitter settings
+		@user = current_user
+		render :show
+	end
+	
+	def new
+		# DO I NEED THIS?
+		@user = current_user
+		render :new
+	end
+
+	def edit
+		@user = current_user
+	end
+
+	# THINKING I MIGHT NOT USE .....
+	# def create
+	# 	@new_home_listing = HomeListing.new(home_listing_params)
+	# 	@new_home_listing.user = current_user
+	# 	@new_home_listing.save		
+	# 	redirect_to / use modal?
+	# end
+
+#_______________________________________________________________________
+	private
+
+	def user_params
+		params.require(:user).permit(:tagline, :about_me, :base_rate, :is_active_sitter)
 	end
 end

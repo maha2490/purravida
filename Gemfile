@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'sprockets'
-gem 'sprockets-es6', require: 'sprockets/es6'
+# gem 'sprockets'
+# gem 'sprockets-es6', require: 'sprockets/es6'
 gem 'rails_12factor', group: :production
 
 gem 'devise'
@@ -9,7 +9,7 @@ gem 'devise'
 gem 'twitter-bootstrap-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-sass'
-
+gem 'bootswatch-rails'
 gem 'paperclip', '~> 4.1'
 
 

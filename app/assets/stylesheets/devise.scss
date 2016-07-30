@@ -111,14 +111,17 @@ html, body {
     width: 36px;
     overflow: hidden;
     text-align: center;
-    margin-top: -7%;
+    margin-top: -16%;
     vertical-align: top;
 }
 
 
 // USER EDIT PROFILE ____________________________________________________________
-
-
+.after_navbar {
+    // Height of the navbar
+        //       |
+    margin-top: 61px;
+}
 
 .btn-file {
     display: inline-block;
@@ -190,7 +193,6 @@ html, body {
     padding: 3%;
     background-color: rgba(238,238,238,0.3);
     width: 107%;
-
 }
 .edit_password {
 	width: 88%;
