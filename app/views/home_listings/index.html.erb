@@ -5,7 +5,7 @@
 				<div class="col-lg-12 temp">
 					<h1> homeshare index </h1>
 					<% @all_listings.each do |listing| %>
-						<section> <!-- will replicate for each listing -->
+						<section> <!-- replicating for each listing -->
 							<p> BEGINNING OF EACH ENTRY </p>
 							<p class="home_listing_index_text">
 								<%= listing.description %> <br>
@@ -19,7 +19,17 @@
 							<div class="container">								
 								<%= image_tag(listing.avatar.url(:medium), class:"round-image-125") %>
 	    					</div>
-	    						
+	    					<div class="row">
+							    <div class="small-2 large-2 columns">
+							    <%= imdb_style_rating_for listing, current_user%>
+							    </div>
+							    <br>
+							    <div class="small-2 large-4 columns">
+							    	<% if current_user %>
+								      Visual Effects: <%= rating_for listing, "feedback" %>				    
+							    	<% end %>
+							    </div>
+							</div>	    						
 						</section>
 					<% end %>
 				</div>

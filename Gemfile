@@ -12,6 +12,8 @@ gem 'font-awesome-sass'
 gem 'bootswatch-rails'
 gem 'paperclip', '~> 4.1'
 
+gem 'ratyrate'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0'
