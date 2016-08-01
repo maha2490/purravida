@@ -12,8 +12,7 @@ class ProfilesController < ApplicationController
 #____SITTER VIEWS ___________________________________________________________________
 
 	def index
-		@active_sitters = 
-
+		@active_sitters = User.where(is_active_sitter: 'true')
 		render :index
 	end
 

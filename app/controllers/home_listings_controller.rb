@@ -30,7 +30,7 @@ class HomeListingsController < ApplicationController
 
 	def home_listing_params
 		params.require(:home_listing).permit(:description, :location, :beds, :baths, :sqft, 
-			:pets, :capacity, :is_active)
+			:pets, :capacity, :is_active, :avatar)
 	end
 	
 end
