@@ -1,10 +1,9 @@
 <!-- SITTER PROFILE edit.html.erb -->
-<!-- home_listings/new.html.erb -->
 <div class="row after_navbar"> 
 	<div class="col-md-3">
 		<div class="home_profile_left_container">
 			<%= image_tag(current_user.avatar.url(:medium), class:"round-image-125") %>
-			<span id="display_user_name_hprofile"> <%= current_user.name %> </span>			
+			<span id="display_user_name_hprofile"> <%= current_user.name %> </span>	
 	    </div>
 	</div>
 	<div class="col-md-8">
@@ -28,7 +27,7 @@
 			            <label for="example-text-input" class="col-xs-2 col-form-label home_edit">tagline
 			            </label>
 			            <div class="col-xs-10">
-			              <%= f.text_field :tagline, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "brief intro to pair with profile photo" %>           
+			              <%= f.text_field :tagline, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "describe yourself in a sentence" %>           
 			            </div>
 			        </div>
 			        <div class="form-group row">
@@ -73,12 +72,10 @@
                       								<h4 class="modal-title" id="myModalLabel">success</h4>
                     							</div>
                     							<div class="modal-body">
-                      								your homeshare listing was created. thanks for listing your place. happy travels!
+                      								your sitter profile was updated.
                     							</div>
                     							<div class="modal-footer">
-                     								<%= link_to("back to home", "/", class:"btn btn-default btn-lg success_modal_buttons" ) %>                      
-                       							 <%= link_to("browse listings", home_listings_path, class:"btn btn-default btn-lg success_modal_buttons" ) %>
-                    							</div>
+                     								<%= link_to("back to home", "/", class:"btn btn-default btn-lg success_modal_buttons" ) %>                  
                   							</div>
                 						</div>
               						</div>

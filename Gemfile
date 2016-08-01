@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-# gem 'sprockets'
-# gem 'sprockets-es6', require: 'sprockets/es6'
+gem 'sprockets'
+gem 'sprockets-es6', require: 'sprockets/es6'
 gem 'rails_12factor', group: :production
 
 gem 'devise'

@@ -1,6 +1,5 @@
 <!-- EDIT PROFILE edit.html.erb -->
-<div class="row after_navbar_edit"> 
-    <!-- <div class="col-md-1"></div> -->
+<div class="row after_navbar_edit">  
     <div class="col-md-8">
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
         <%= devise_error_messages! %>
@@ -53,19 +52,14 @@
 
     <!--_____ CONFIRM BUTTON _____________________________________________________-->
           <div class="row">
-            <div class="col-md-8">
-              
-                  <div class="actions">
-                      <%= f.submit "save changes", class:"btn btn-default btn-sm edit_submit" %>
-                  </div>
-                  
-            </div> <!-- col-md-6-->
-
-            <div class="col-md-4">
-              
-            </div>
+            <div class="col-md-8">             
+              <div class="actions">
+                <%= f.submit "save changes", class:"btn btn-default btn-sm edit_submit" %>
+              </div>                  
+            </div> 
+            <div class="col-md-4"></div>
           </div> <!-- confirm row -->
-      </div> <!--  form-group -->
+        </div> <!--  box border -->
      <% end %>
     </div> <!-- col-md-8 -->
  

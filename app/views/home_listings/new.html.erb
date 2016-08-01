@@ -69,10 +69,25 @@
 						  	<%= f.text_field :capacity, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "sleeps 1-4 adults" %>		    
 						  </div>
 					</div>
+
+					<div class="form-group fileinput">
+		            	<%= f.label :avatar, "photo", class: "col-xs-1 control-label home_edit_file_upload" %>
+			            <div class="col-xs-11">
+			              <div class="input-group edit_profile_file_field">
+			                <span class="input-group-btn">
+			                  <label class="btn btn-default btn-file">Browse...
+			                    <%= f.file_field :avatar, class: 'upload-btn' %>
+			                  </label>
+			                </span>
+			                <div class="form-control file_upload_area" readonly="" type="text">   	
+			                </div>
+			              </div>
+			            </div>
+		          	</div>
 					<div class="col-lg-10">
 					<div class="form-group row">
-                    	<label class="col-xs-2 col-form-label home_edit_radio"></label>
-                    	<div class="col-xs-10">
+                    	<label class="col-xs-2 col-form-label home_edit_radio">activate</label>
+                    	<div class="col-xs-10 radio_box">
                       		<div class="radio">                        		
                         		<!-- <input type="checkbox" name="house_listing[is_active]" id="optionsRadios1"> -->
                         		<%= f.check_box :is_active %>
