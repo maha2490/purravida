@@ -32,6 +32,13 @@ class ProfilesController < ApplicationController
 		@user = current_user
 	end
 
+	def update
+		@user = current_user
+		@user.update_attributes(user_params)
+		@user.save
+	end
+
+
 	# THINKING I MIGHT NOT USE .....
 	# def create
 	# 	@new_home_listing = HomeListing.new(home_listing_params)

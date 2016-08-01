@@ -9,7 +9,7 @@
     border-radius: 25px;
     margin-top: 5%;
     padding-bottom: 4%;
-    background-color: rgba(238, 238, 238, 0.3);
+    background-color: rgba(238, 238, 238, 0.8);
     width: 100%;
 }
 .lead {
@@ -35,8 +35,15 @@
 .edit_profile_button {
 	width: 65%;
 	height: 52px;
-	margin-left: 17%;
+	margin-left: 13%;
 	margin-top: 3%;
+}
+
+// SITTER SETTINGS ________________________________________________________
+.edit_sitter_modal_button {
+    display: inline;
+    width: 35%;
+    margin-right: 38%;
 }
 
 // HOME SETTINGS __________________________________________________________
@@ -61,7 +68,7 @@
     margin-top: 1%;
     margin-left: 7%;
     padding: 3%;
-    background-color: rgba(238, 238, 238, 0.3);
+    background-color: rgba(238, 238, 238, 0.4);
     width: 90%;
 }
 .home_profile_heading {

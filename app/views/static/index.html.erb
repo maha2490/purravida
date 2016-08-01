@@ -1,6 +1,11 @@
 <!-- HOMEPAGE index.html.erb -->	
-<div class="row home_page_body">
-	<div class="col-md-8 col-xs-12">
+
+<div class="row home_page_body">	
+	<div class="col-md-12 col-xs-12 pic_wrapper">
+		<img id="sunny_cat" alt="sunny cat" src="/assets/AdobeStock_110682625_WM.jpeg" />
+		<p> purravida </p>
+	</div>	
+	<div class="col-md-12 col-xs-12">
 		<div class="jumbotron about_j">
 			<h1>purravida</h1>
 			<img src="/assets/purravida-logo.gif" alt="logo" class="purravida_logo">
@@ -12,7 +17,10 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-md-4 col-xs-12">
+</div>
+<div class="row">
+	<div class="col-md-12 col-xs-12">
+		<p> putting in some text </p>
 		<%= link_to("sign up", new_user_registration_path, class:"btn btn-default btn-lg su_home") %>
 		<%= link_to("log in", new_user_session_path, class:"btn btn-default btn-lg li_home" ) %>
 	</div>

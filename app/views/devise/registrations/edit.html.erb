@@ -1,100 +1,101 @@
 <!-- EDIT PROFILE edit.html.erb -->
-<div class="row after_navbar_edit">  
-    <div class="col-md-8">
-      <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-        <%= devise_error_messages! %>
-        <p class="form_header_edit">Edit profile </p>
-        <div class="box_border">
-            
-          <div class="form-group">
-            <%= f.label :name, class: "col-lg-1 control-label" %>
-            <div class="col-lg-11">
-              <%= f.text_field :name, autofocus: true, class: "form-control edit_profile_form_field", placeholder: "name" %>
-            </div>
-          </div>
-     
-
-          <div class="form-group">
-            <%= f.label :email, class: "col-lg-1 control-label" %>
-            <div class="col-lg-11">
-              <%= f.text_field :email, autofocus: true, class: "form-control edit_profile_form_field", placeholder: "name" %>
-            </div>
-          </div>
-          <div class="form-group fileinput">
-            <%= f.label :avatar, "Photo", class: "col-lg-1 control-label" %>
-            <div class="col-lg-11">
-              <div class="input-group edit_profile_form_field">
-                <span class="input-group-btn">
-                  <label class="btn btn-default btn-file">Browse...
-                    <%= f.file_field :avatar, class: 'upload-btn' %>
-                  </label>
-                </span>
-                <div class="form-control file_upload_area" readonly="" type="text"></div>
+<body class="container background_pattern_test">
+  <div class="row after_navbar_edit">  
+      <div class="col-md-8">
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+          <%= devise_error_messages! %>
+          <p class="form_header_edit">Edit profile </p>
+          <div class="box_border">
+              
+            <div class="form-group">
+              <%= f.label :name, class: "col-lg-1 control-label" %>
+              <div class="col-lg-11">
+                <%= f.text_field :name, autofocus: true, class: "form-control edit_profile_form_field", placeholder: "name" %>
               </div>
             </div>
-          </div>
-          <div class="form-group">
-            <%= f.label :password, class:"col-lg-1 control-label" %> 
-            <div class="col-lg-11">
-              <%= f.password_field :password, class: "form-control edit_profile_form_field", autocomplete: "off", placeholder: "6 character minimum" %>
-            </div>
-          </div>
-          <div class="form-group">
-            <%= f.label :password_confirmation, class:"col-lg-1 control-label" %>            
-            <div class="col-lg-11">
-              <%= f.password_field :password_confirmation, class: "form-control edit_profile_form_field", autocomplete: "off", placeholder: "enter password to confirm changes" %>
-            </div>
-          </div>
-        
-          <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-            <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-          <% end %>
+       
 
-    <!--_____ CONFIRM BUTTON _____________________________________________________-->
-          <div class="row">
-            <div class="col-md-8">             
-              <div class="actions">
-                <%= f.submit "save changes", class:"btn btn-default btn-sm edit_submit" %>
-              </div>                  
-            </div> 
-            <div class="col-md-4"></div>
-          </div> <!-- confirm row -->
-        </div> <!--  box border -->
-     <% end %>
-    </div> <!-- col-md-8 -->
- 
+            <div class="form-group">
+              <%= f.label :email, class: "col-lg-1 control-label" %>
+              <div class="col-lg-11">
+                <%= f.text_field :email, autofocus: true, class: "form-control edit_profile_form_field", placeholder: "name" %>
+              </div>
+            </div>
+            <div class="form-group fileinput">
+              <%= f.label :avatar, "Photo", class: "col-lg-1 control-label" %>
+              <div class="col-lg-11">
+                <div class="input-group edit_profile_form_field">
+                  <span class="input-group-btn">
+                    <label class="btn btn-default btn-file">Browse...
+                      <%= f.file_field :avatar, class: 'upload-btn' %>
+                    </label>
+                  </span>
+                  <div class="form-control file_upload_area" readonly="" type="text"></div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <%= f.label :password, class:"col-lg-1 control-label" %> 
+              <div class="col-lg-11">
+                <%= f.password_field :password, class: "form-control edit_profile_form_field", autocomplete: "off", placeholder: "6 character minimum" %>
+              </div>
+            </div>
+            <div class="form-group">
+              <%= f.label :password_confirmation, class:"col-lg-1 control-label" %>            
+              <div class="col-lg-11">
+                <%= f.password_field :password_confirmation, class: "form-control edit_profile_form_field", autocomplete: "off", placeholder: "enter password to confirm changes" %>
+              </div>
+            </div>
+          
+            <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+              <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+            <% end %>
 
-<!--_____ SIDE NAV BUTTONS ____________________________________________________________________-->  
-    <div class="side_nav_container">
-      <div class="col-md-4">
-         <div class="actions">
-            <!-- <button class="btn btn-default btn-lg edit_side_buttons">sitter settings</button> -->
-            <%= link_to("sitter settings", edit_profile_path(current_user), class:"btn btn-default btn-lg edit_side_buttons" ) %>
-            <p class="edit_side_button_text"></p>
-          </div>
-          <div class="actions">
-            <%= link_to("home settings", new_home_listing_path, class:"btn btn-default btn-lg edit_side_buttons" ) %>
-            <p class="edit_side_button_text"></p>
-          </div>
+      <!--_____ CONFIRM BUTTON _____________________________________________________-->
+            <div class="row">
+              <div class="col-md-8">             
+                <div class="actions">
+                  <%= f.submit "save changes", class:"btn btn-default btn-sm edit_submit" %>
+                </div>                  
+              </div> 
+              <div class="col-md-4"></div>
+            </div> <!-- confirm row -->
+          </div> <!--  box border -->
+       <% end %>
+      </div> <!-- col-md-8 -->
+   
+
+  <!--_____ SIDE NAV BUTTONS ____________________________________________________________________-->  
+      <div class="side_nav_container">
+        <div class="col-md-4">
+           <div class="actions">
+              <!-- <button class="btn btn-default btn-lg edit_side_buttons">sitter settings</button> -->
+              <%= link_to("sitter settings", edit_profile_path(current_user), class:"btn btn-default btn-lg edit_side_buttons" ) %>
+              <p class="edit_side_button_text"></p>
+            </div>
+            <div class="actions">
+              <%= link_to("home settings", new_home_listing_path, class:"btn btn-default btn-lg edit_side_buttons" ) %>
+              <p class="edit_side_button_text"></p>
+            </div>
+        </div>
       </div>
+    </div> <!-- main row -->
+
+
+  <!--_____  CANCEL PROFILE ____________________________________________________________________-->  
+
+    <div class="row">  
+      <div class="col-md-8">
+        <p class="header_cancel">Cancel my account</p>
+            <div class="box_border">
+                <p class="cancel_note"> we hope you don't want to go. if you must part ways, click here to delete your Purravida profile. </p> 
+                <p><%= button_to "cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class:"btn btn-default btn-sm edit_cancel_button" %></p>
+            </div>
+      </div>
+      <div class="col-md-4"></div>
     </div>
-  </div> <!-- main row -->
-
-
-<!--_____  CANCEL PROFILE ____________________________________________________________________-->  
-
-  <div class="row">  
-    <div class="col-md-8">
-      <p class="header_cancel">Cancel my account</p>
-          <div class="box_border">
-              <p class="cancel_note"> we hope you don't want to go. if you must part ways, click here to delete your Purravida profile. </p> 
-              <p><%= button_to "cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class:"btn btn-default btn-sm edit_cancel_button" %></p>
-          </div>
-    </div>
-    <div class="col-md-4"></div>
-  </div>
-</div> <!-- edit user -->
-
+  </div> <!-- edit user -->
+</body>
 
 
 

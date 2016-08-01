@@ -1,20 +1,23 @@
 <!-- user_profile.html.erb -->
-<div class="row after_navbar">
-    <div class="profile_box clearfix">
-    	<div class="col-sm-4">
-			<%= image_tag(current_user.avatar.url(:medium), class:"round-image-125-show") %>
-			<div class="actions">
-	        	<%= link_to("edit profile", edit_user_registration_path, class:"btn btn-default btn-lg edit_profile_button" ) %>
-	    	</div>	    	
-		</div>
-    	<div class="col-sm-8">
-    		<div id="profile_text">
-	          	<h1 id="profile_name"> <%= current_user.name %> </h1>
-	          	<p class="text-muted">member since 7/2016</p>
-		        <p class="lead"> 
-		        	purravida founder. fluffy cat lover, foodie, & travel enthusiast. living summer year-round in Miami, FL . out of the country during september. check out my homeswap listing!
-		        </p> 
-		    </div>
-    	</div>  
-    </div>     
-</div>
+<body class="container background_pattern_test">
+	<div class="row after_navbar">
+	    <div class="profile_box clearfix">
+	    	<div class="col-sm-4">
+				<%= image_tag(current_user.avatar.url(:medium), class:"round-image-125-show") %>
+				<div class="actions">
+		        	<%= link_to("edit profile", edit_user_registration_path, class:"btn btn-default btn-lg edit_profile_button" ) %>
+		    	</div>	    	
+			</div>
+	    	<div class="col-sm-8">
+	    		<div id="profile_text">
+		          	<h1 id="profile_name"> <%= current_user.name %> </h1>
+		          	<p class="text-muted">member since 7/2016</p>
+			        <p class="lead"> 
+			        	<%= current_user.about_me %>
+			        	purravida founder. fluffy cat lover, foodie, & travel enthusiast. living summer year-round in Miami, FL . out of the country during september. check out my homeswap listing!
+			        </p> 
+			    </div>
+	    	</div>  
+	    </div>     
+	</div>
+</body>

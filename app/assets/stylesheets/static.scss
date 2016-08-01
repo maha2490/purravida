@@ -3,7 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 // ____________________HOME PAGE HEADER______________________________________
-
+.pic_wrapper {
+	background-color: white;
+    width: 100vw;
+}
+#sunny_cat {
+	margin-left: -41%;
+}
 .test_box {
 	background-color: red;
 	height: 500px;

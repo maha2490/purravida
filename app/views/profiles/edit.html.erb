@@ -34,7 +34,7 @@
 			            <label for="example-search-input" class="col-xs-2 col-form-label home_edit">location
 			            </label>
 			            <div class="col-xs-10">
-			              <input type="text" class="form-control edit_home_profile_field" id="inputDefault">
+			              <%= f.text_field :location, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "west covina, ca USA" %> 
 			            </div>
 			        </div>
 			        <div class="form-group row">
@@ -72,10 +72,10 @@
                       								<h4 class="modal-title" id="myModalLabel">success</h4>
                     							</div>
                     							<div class="modal-body">
-                      								your sitter profile was updated.
+                      								your sitter profile was updated!
                     							</div>
                     							<div class="modal-footer">
-                     								<%= link_to("back to home", "/", class:"btn btn-default btn-lg success_modal_buttons" ) %>                  
+                     								<%= link_to("back to home", "/", class:"btn btn-default btn-lg edit_sitter_modal_button" ) %>                  
                   							</div>
                 						</div>
               						</div>
