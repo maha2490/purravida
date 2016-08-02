@@ -4,8 +4,6 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Purravida</title>
     <%= csrf_meta_tags %>
-
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -13,11 +11,8 @@
   <body>
   	<div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-        <div class="navbar-header">          
-            <span>                          
+        <div class="navbar-header">                                   
               <%= image_tag 'purravida-logo.gif', alt: 'purravida, connecting cat-loving travelers', class: "purravida_logo_header"%>
-              <a href="/" class="purravida_navbar">purravida</a>
-            </span>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -26,7 +21,9 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav"> 
-           <!-- any left navbar content add here -->
+            <li>
+              <a href="/" class="purravida_navbar_text">Purravida</a>
+            </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
 
@@ -36,33 +33,33 @@
               <li>
                 <a href="/home_listings">
                   <i class="fa fa-globe fa-lg" aria-hidden="true"></i>
-                  search homeshare
+                  <span class="other_navbar_text">Search homeshare</span>
                 </a>             
               </li> 
               <li>
                 <a href="/profiles">
                   <i class="fa fa-home fa-lg" aria-hidden="true"></i>
-                  find a sitter
+                  <span class="other_navbar_text">Find a sitter</span>
                 </a>
               </li>                                                                   
-              <li class="dropdown">
+              <li class="dropdown other_navbar_text">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download"> 
                     <%= image_tag(current_user.avatar.url(:thumb), class:"round-image-50") %>          
                     <ul class="dropdown-menu" aria-labelledby="download">
                       <li>
-                        <%= link_to("your profile",  user_profile_path) %>
+                        <%= link_to("Your profile",  user_profile_path) %>
                       </li>
                       <li class="divider"></li>
                       <li>
-                        <%= link_to("sitter settings", edit_profile_path(current_user)) %>
+                        <%= link_to("Sitter settings", edit_profile_path(current_user)) %>
                       </li>
                       <li class="divider"></li>
                       <li>
-                        <%= link_to("home settings", new_home_listing_path) %>
+                        <%= link_to("Home settings", new_home_listing_path) %>
                       </li>
                       <li class="divider"></li>
                       <li>
-                        <%= link_to("log out", destroy_user_session_path, method: :delete) %>
+                        <%= link_to("Log out", destroy_user_session_path, method: :delete) %>
                       </li>
                     </ul>
                </li>            
@@ -86,7 +83,9 @@
               	</a>
               </li>
               <li>
-                <%= link_to("log in",  new_user_session_path) %>
+                <span id="login_box">
+                <%= link_to("login",  new_user_session_path, class: "log_in_navbar") %>
+                </span>
               </li>
              <% end %>
           </ul>
