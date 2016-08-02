@@ -2,7 +2,6 @@
 <body class="container background_pattern_test">
 	<div class="row after_navbar">
 		<div class="col-lg-12 col-xs-12">
-			<h1> sitter index </h1>
 			<% @active_sitters.each do |sitter| %>
 				<section class="home_index_container"> <!-- replicating for each listing -->
 					<div class="row">
@@ -11,20 +10,22 @@
 						</div>
 						<div class="col-lg-6 col-xs-6 home_index_container_each">							
 							<p class="home_listing_index_text">
-								<h1 class="home_index_box_text"> <%= sitter.name %> </h1s>
-								<h4 class="home_index_box_text"> <%= sitter.tagline %> </h4>
-								<h4 class="home_index_box_text"> <%= sitter.location %> </h4>
+								<p class="sitter_index_box_name"> <%= sitter.name %> </p>
+								<p class="sitter_index_box_location"> <%= sitter.location %> </p>
+								<p class="sitter_index_box_tagline"> <%= sitter.about_me %> </p>
 							</p>
 							<div class="row">
 							    <div class="small-2 large-4 columns test">
-							    	<p> sitter rating TBD </p>
+							    	<!-- <p> sitter rating TBD </p> -->
 							    </div>
 							</div>
 						</div>
 						<div class="col-lg-3 col-xs-3">	
 						    <!-- LINK CORRECT PATH TO BUTTON/SHOW PAGE -->						
 							<%= link_to("more info", "/", class:"btn btn-default btn-lg more_home_info_button" ) %>	
-							<p> <%= sitter.base_rate %> </p>
+							<div id="price_container">
+								<p id="sitter_price"> <%= sitter.base_rate %> / <br> day</p>
+							</div>
 						</div>						
 					</div>	    						
 				</section>

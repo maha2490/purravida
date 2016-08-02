@@ -117,3 +117,48 @@
     margin-top: 2%;
     height: 53px;
 }
+
+// SITTER INDEX ________________________________________________________
+
+#price_container {
+    width: 100px;
+    height: 100px;
+    //background: #777;
+    border: 3px solid #777;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+#sitter_price {
+    margin-top: 25%;
+    margin-left: 25%;
+    font-size: 150%;
+}
+.sitter_index_box_name {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    letter-spacing: 1px;
+    line-height: 1.1em;
+    color: #777;
+    font-size: 215%;
+    margin-top: 5%;
+}
+.sitter_index_box_location {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.1em;
+    letter-spacing: 1px;
+    line-height: 1.1em;
+    color: #777;
+    font-size: 115%;
+}
+.sitter_index_box_tagline {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.1em;
+    letter-spacing: 1px;
+    line-height: 1.1em;
+    color: #777;
+    font-size: 150%;
+}
