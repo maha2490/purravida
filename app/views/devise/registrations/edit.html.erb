@@ -1,13 +1,13 @@
 <!-- EDIT PROFILE edit.html.erb -->
-<body class="container background_pattern_test">
-  <div class="row after_navbar_edit"  style="padding-top:10%">  
+<body class="background_pattern_test">
+  <div class="row after_navbar_edit"  style="padding-top:5%">  
       <div class="col-md-8">
         <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
           <%= devise_error_messages! %>
           <p class="form_header_edit">Edit your profile </p>
           <div class="box_border">
               
-            <div class="form-group">
+            <div class="row form-group">
               <%= f.label :name, "name", class: "col-lg-1 control-label" %>
               <div class="col-lg-11">
                 <%= f.text_field :name, autofocus: true, class: "form-control edit_profile_form_field", placeholder: "name" %>
@@ -15,13 +15,13 @@
             </div>
        
 
-            <div class="form-group">
+            <div class="row form-group">
               <%= f.label :email, "email",class: "col-lg-1 control-label" %>
               <div class="col-lg-11">
                 <%= f.text_field :email, autofocus: true, class: "form-control edit_profile_form_field", placeholder: "name" %>
               </div>
             </div>
-            <div class="form-group fileinput">
+            <div class="row form-group fileinput">
               <%= f.label :avatar, "photo", class: "col-lg-1 control-label" %>
               <div class="col-lg-11">
                 <div class="input-group edit_profile_form_field">
@@ -34,13 +34,19 @@
                 </div>
               </div>
             </div>
-            <div class="form-group">
+            <div class="row form-group">
+              <%= f.label :current_password, "current password", class:"col-lg-1 control-label" %> 
+              <div class="col-lg-11">
+                <%= f.password_field :current_password, class: "form-control edit_profile_form_field", autocomplete: "off", placeholder: "6 character minimum" %>
+              </div>
+            </div>
+            <div class="row form-group">
               <%= f.label :password, "password", class:"col-lg-1 control-label" %> 
               <div class="col-lg-11">
                 <%= f.password_field :password, class: "form-control edit_profile_form_field", autocomplete: "off", placeholder: "6 character minimum" %>
               </div>
             </div>
-            <div class="form-group">
+            <div class="row form-group">
               <%= f.label :password_confirmation, "password confirmation", class:"col-lg-1 control-label" %>            
               <div class="col-lg-11">
                 <%= f.password_field :password_confirmation, class: "form-control edit_profile_form_field", autocomplete: "off", placeholder: "enter password to confirm changes" %>

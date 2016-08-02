@@ -1,5 +1,6 @@
 class StaticController < ApplicationController
 	def index
+		@use_container_fluid = true
 		render :index
 	end
 
