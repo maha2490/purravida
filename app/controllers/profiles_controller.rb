@@ -51,6 +51,6 @@ class ProfilesController < ApplicationController
 	private
 
 	def user_params
-		params.require(:user).permit(:tagline, :about_me, :base_rate, :is_active_sitter)
+		params.require(:user).permit(:tagline, :about_me, :base_rate, :location, :is_active_sitter)
 	end
 end

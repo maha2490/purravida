@@ -8,7 +8,8 @@
     width: 100vw;
 }
 #sunny_cat {
-	margin-left: -41%;
+	height: 1000px;
+    margin-left: -41%;
 }
 .test_box {
 	background-color: red;
@@ -27,6 +28,12 @@
 	display: inline-block;
     height: 41px;
     margin-top: 7%;
+}
+.purravida_navbar {
+	color: #777;
+    position: absolute;
+    margin-top: -1.9%;
+    margin-left: 3%;
 }
 
 .home_sm_icons {
@@ -50,6 +57,9 @@
 .fa-snapchat {
 	padding-right: 10%;
 	color: #545A5B;
+}
+.icons {
+	display: inline;
 }
 
 // ____________________HOME PAGE MAIN________________________________________

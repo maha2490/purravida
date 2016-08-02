@@ -14,12 +14,10 @@
   	<div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">          
-            <span>
-             <%= link_to("/") do %>
-                <%= image_tag 'purravida-logo.gif', alt: 'purravida, connecting cat-loving travelers', class: "purravida_logo_header"%>
-             <% end %> 
+            <span>                          
+              <%= image_tag 'purravida-logo.gif', alt: 'purravida, connecting cat-loving travelers', class: "purravida_logo_header"%>
+              <a href="/" class="purravida_navbar">purravida</a>
             </span>
-            <a href="/"> purravida </a>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -30,19 +28,22 @@
           <ul class="nav navbar-nav"> 
            <!-- any left navbar content add here -->
           </ul>
-
           <ul class="nav navbar-nav navbar-right">
 
 
 <!--_____ SIGNED IN HEADER BAR _____________________________________________________________________-->
             <% if current_user %>                                   
               <li>
-                <%= link_to("search homeshare", home_listings_path) %>
-                <span><i class="fa fa-globe fa-lg" aria-hidden="true"></i></span>
+                <a href="/home_listings">
+                  <i class="fa fa-globe fa-lg" aria-hidden="true"></i>
+                  search homeshare
+                </a>             
               </li> 
               <li>
-                <%= link_to("find a sitter", profiles_path) %>
-                <span><i class="fa fa-home fa-lg" aria-hidden="true"></i></span>
+                <a href="/profiles">
+                  <i class="fa fa-home fa-lg" aria-hidden="true"></i>
+                  find a sitter
+                </a>
               </li>                                                                   
               <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download"> 
@@ -94,7 +95,6 @@
     </div>  
     <div class="container">
     	<%= yield %>
-
     </div>
   </body>
 </html>
