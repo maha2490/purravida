@@ -26,5 +26,8 @@ $(document).on("turbolinks:load", function(){
 		$('.file_upload_area').text(the_file);
 	});
 
-
+	  $(".users_pic1").hover(
+        function () {
+          $(this).toggleClass("hover_img");
+        });
 });

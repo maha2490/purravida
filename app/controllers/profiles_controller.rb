@@ -1,7 +1,7 @@
 class ProfilesController < ApplicationController
 
 	def user_profile
-		@user_id = current_user.id
+		#@user_id = current_user.id
 
 		@name = current_user.name
 
@@ -51,6 +51,6 @@ class ProfilesController < ApplicationController
 	private
 
 	def user_params
-		params.require(:user).permit(:tagline, :about_me, :base_rate, :location, :is_active_sitter)
+		params.require(:user).permit(:name, :email, :tagline, :about_me, :base_rate, :location, :is_active_sitter)
 	end
 end
