@@ -1,96 +1,97 @@
 <!-- SITTER PROFILE edit.html.erb -->
-<div class="row after_navbar"> 
-	<div class="col-md-3">
-		<div class="home_profile_left_container">
-			<%= image_tag(current_user.avatar.url(:medium), class:"round-image-125") %>
-			<span id="display_user_name_hprofile"> <%= current_user.name %> </span>	
-	    </div>
-	</div>
-	<div class="col-md-8">
-		<div class="row">
-			<div class="col-md-12">				
-				<p class="home_profile_heading">sitter settings</p>       				
-			</div>		
+<body class="background_pattern_test">
+	<div class="row after_navbar"> 
+		<div class="col-md-3">
+			<div class="home_profile_left_container">
+				<%= image_tag(current_user.avatar.url(:medium), class:"round-image-125") %>
+				<span id="display_user_name_hprofile"> <%= current_user.name %> </span>	
+		    </div>
 		</div>
-		<div class="row">
-			<div class="col-md-12 box_border_2">
-				<div class="bd-example" data-example-id="">
-				<%= form_for @user, url: profile_path do |f| %> 		  				 
-					<div class="form-group row">
-			            <label for="exampleTextarea" class="col-xs-2 col-form-label home_edit">about me
-			            </label>
-			            <div class="col-xs-10">
-			                <%= f.text_field :about_me, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "describe yourself for other pet parents" %>
-			            </div>
-			        </div>
-			        <div class="form-group row">
-			            <label for="example-text-input" class="col-xs-2 col-form-label home_edit">tagline
-			            </label>
-			            <div class="col-xs-10">
-			              <%= f.text_field :tagline, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "describe yourself in a sentence" %>           
-			            </div>
-			        </div>
-			        <div class="form-group row">
-			            <label for="example-search-input" class="col-xs-2 col-form-label home_edit">location
-			            </label>
-			            <div class="col-xs-10">
-			              <%= f.text_field :location, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "west covina, ca USA" %> 
-			            </div>
-			        </div>
-			        <div class="form-group row">
-			            <label for="example-search-input" class="col-xs-2 col-form-label home_edit">base_rate
-			            </label>
-			            <div class="col-xs-10">
-			              <%= f.text_field :base_rate, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "$25/night" %>  
-			            </div>
-			        </div>        		        				
-					<div class="col-lg-10">
-			          	<div class="form-group row">
-			                <label class="col-xs-2 col-form-label home_edit_radio"></label>
-			                <div class="col-xs-10">
-			                    <div class="radio">                                                       
-			                        <%= f.check_box :is_active_sitter %>
-			                        <label>
-			                            currently available to sit
-			                        </label>
-			                    </div>
-			                </div>
-			            </div>
-			        </div>
-			        <div class="form-group row">
-		              	<div class="col-xs-2"></div>
-		              		<div class="col-xs-8">                
-		                		<div class="actions">
-                         			<%= f.submit "save", class:"btn btn-default btn-sm housing_submit", data: {toggle: "modal", target: "#myModal"}%>
-              						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" 		aria-labelledby="myModalLabel" aria-hidden="true">
-                						<div class="modal-dialog" role="document">
-                    						<div class="modal-content" id="listing_success_modal">
-                    							<div class="modal-header">
-                        							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        								<span aria-hidden="true">&times;</span>
-                      								</button>
-                      								<h4 class="modal-title" id="myModalLabel">success</h4>
-                    							</div>
-                    							<div class="modal-body">
-                      								your sitter profile was updated!
-                    							</div>
-                    							<div class="modal-footer">
-                     								<%= link_to("back to home", "/", class:"btn btn-default btn-lg edit_sitter_modal_button" ) %>                  
-                  							</div>
-                						</div>
-              						</div>
-          						</div>
-          					</div>
-          				</div>
-          			</div>	     					     
-					<% end %>
-				</div> <!-- bd-example -->
-			</div> <!-- box_border_2 -->
-		</div> <!-- row  -->
-	</div> <!-- col md 8 -->
-	<div class="col-md-1"></div>
-</div>
-
+		<div class="col-md-8">
+			<div class="row">
+				<div class="col-md-12">				
+					<p class="home_profile_heading">Sitter Settings</p>       				
+				</div>		
+			</div>
+			<div class="row">
+				<div class="col-md-12 box_border_2">
+					<div class="bd-example" data-example-id="">
+					<%= form_for @user, url: profile_path do |f| %> 		  				 
+						<div class="form-group row">
+				            <label for="exampleTextarea" class="col-xs-2 col-form-label home_edit">about me
+				            </label>
+				            <div class="col-xs-10">
+				                <%= f.text_field :about_me, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "describe yourself for other pet parents" %>
+				            </div>
+				        </div>
+				        <div class="form-group row">
+				            <label for="example-text-input" class="col-xs-2 col-form-label home_edit">tagline
+				            </label>
+				            <div class="col-xs-10">
+				              <%= f.text_field :tagline, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "describe yourself in a sentence" %>           
+				            </div>
+				        </div>
+				        <div class="form-group row">
+				            <label for="example-search-input" class="col-xs-2 col-form-label home_edit">location
+				            </label>
+				            <div class="col-xs-10">
+				              <%= f.text_field :location, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "west covina, ca USA" %> 
+				            </div>
+				        </div>
+				        <div class="form-group row">
+				            <label for="example-search-input" class="col-xs-2 col-form-label home_edit">base_rate
+				            </label>
+				            <div class="col-xs-10">
+				              <%= f.text_field :base_rate, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "$25/night" %>  
+				            </div>
+				        </div>        		        				
+						<div class="col-lg-10">
+				          	<div class="form-group row">
+				                <label class="col-xs-2 col-form-label home_edit_radio"></label>
+				                <div class="col-xs-10">
+				                    <div class="radio">                                                       
+				                        <%= f.check_box :is_active_sitter %>
+				                        <label>
+				                            currently available to sit
+				                        </label>
+				                    </div>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="form-group row">
+			              	<div class="col-xs-2"></div>
+			              		<div class="col-xs-8">                
+			                		<div class="actions">
+	                         			<%= f.submit "save", class:"btn btn-default btn-sm housing_submit", data: {toggle: "modal", target: "#myModal"}%>
+	              						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" 		aria-labelledby="myModalLabel" aria-hidden="true">
+	                						<div class="modal-dialog" role="document">
+	                    						<div class="modal-content" id="listing_success_modal">
+	                    							<div class="modal-header">
+	                        							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	                        								<span aria-hidden="true">&times;</span>
+	                      								</button>
+	                      								<h4 class="modal-title" id="myModalLabel">success</h4>
+	                    							</div>
+	                    							<div class="modal-body">
+	                      								your sitter profile was updated!
+	                    							</div>
+	                    							<div class="modal-footer">
+	                     								<%= link_to("back to home", "/", class:"btn btn-default btn-lg edit_sitter_modal_button" ) %>                  
+	                  							</div>
+	                						</div>
+	              						</div>
+	          						</div>
+	          					</div>
+	          				</div>
+	          			</div>	     					     
+						<% end %>
+					</div> <!-- bd-example -->
+				</div> <!-- box_border_2 -->
+			</div> <!-- row  -->
+		</div> <!-- col md 8 -->
+		<div class="col-md-1"></div>
+	</div>
+</body>
 
 
 

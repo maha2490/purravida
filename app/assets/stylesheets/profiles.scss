@@ -8,8 +8,10 @@
 .profile_box{
     border-radius: 25px;
     margin-top: 5%;
-    padding-bottom: 4%;
+    padding-left: 4%;
     width: 100%;
+    background-color: rgba(238, 238, 238, 0.9);
+    height: 484px;
 }
 .lead {
 	margin-top: 3%;
@@ -74,6 +76,7 @@
 	text-align: center; 
     font-size: 52px;
     margin-top: 4%;
+    font-family: 'Montserrat', sans-serif;
 }
 .home_profile_left_container{
 	margin-left: 16%;
