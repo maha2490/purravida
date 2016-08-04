@@ -13,5 +13,3 @@ rachel, liz, leah = User.create([
 	{name: "leah", email:"leah@shopplanetblue.com" , password: "password", password_confirmation:"password"}
 	])
 
-mindy = User.create( name:"mindy jones", email: "mindy@morkandmindy.com" , password:"password", password_confirmation:"password",
-		is_active_sitter: true, about_me: "used to be on TV")
