@@ -1,133 +1,135 @@
 <!-- home_listings/new.html.erb -->
-<div class="row after_navbar"> 
-	<div class="col-md-3">
-		<div class="home_profile_left_container">
-			<%= image_tag(current_user.avatar.url(:medium), class:"round-image-125") %>
-			<span id="display_user_name_hprofile"> <%= current_user.name %> </span>
-			<div class="new_listing_buttton_container">      
-	        	<div class="actions">
-		            <%= link_to("create new listing", "/", class:"btn btn-default new_listing_button" ) %>
-	          	</div>      
-	    	</div>
-	    </div>
-	</div>
-	<div class="col-md-8">
-		<div class="row">
-			<div class="col-md-12">				
-				<p class="home_profile_heading">Homeshare Profile</p>				
-			</div>		
+<body class="background_pattern_test">
+	<div class="row after_navbar"> 
+		<div class="col-md-3">
+			<div class="home_profile_left_container">
+				<%= image_tag(current_user.avatar.url(:medium), class:"round-image-125") %>
+				<span id="display_user_name_hprofile"> <%= current_user.name %> </span>
+				<div class="new_listing_buttton_container">      
+		        	<div class="actions">
+			            <%= link_to("create new listing", "/", class:"btn btn-default new_listing_button" ) %>
+		          	</div>      
+		    	</div>
+		    </div>
 		</div>
-		<div class="row">
-			<div class="col-md-12 box_border_2">
-				<div class="bd-example" data-example-id="">
-				<%= form_for @new_home_listing do |f| %>		  				 
-					<div class="form-group row">
-					  	<label for="exampleTextarea" class="col-xs-2 col-form-label home_edit">description
-					  	</label>
-					    <div class="col-xs-10">
-					    	<%= f.text_field :description, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "describe your space (i.e Breezy Key West bungalow)" %>
-					    </div>
-					</div>
-					<div class="form-group row">
-					  	<label for="example-text-input" class="col-xs-2 col-form-label home_edit">location
-					  	</label>
-						 <div class="col-xs-10">
-						 	<%= f.text_field :location, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "city / state / country)" %>				    
-						  </div>
-					</div>
-					<div class="form-group row">
-						<label for="example-search-input" class="col-xs-2 col-form-label home_edit">beds
-						</label>
-						<div class="col-xs-10">
-							<%= f.text_field :beds, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "studio" %>	
+		<div class="col-md-8">
+			<div class="row">
+				<div class="col-md-12">				
+					<p class="home_profile_heading">Homeshare Profile</p>				
+				</div>		
+			</div>
+			<div class="row">
+				<div class="col-md-12 box_border_2">
+					<div class="bd-example" data-example-id="">
+					<%= form_for @new_home_listing do |f| %>		  				 
+						<div class="form-group row">
+						  	<label for="exampleTextarea" class="col-xs-2 col-form-label home_edit">description
+						  	</label>
+						    <div class="col-xs-10">
+						    	<%= f.text_field :description, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "describe your space (i.e Breezy Key West bungalow)" %>
+						    </div>
 						</div>
-					</div>
-					<div class="form-group row">
-						  <label for="example-email-input" class="col-xs-2 col-form-label home_edit">baths
-						  </label>
-						  <div class="col-xs-10">
-						  	<%= f.text_field :baths, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "1.5" %>
-						  </div>
-					</div>
-					<div class="form-group row">
-						  <label for="example-url-input" class="col-xs-2 col-form-label home_edit">sq.ft</label>
-						  <div class="col-xs-10">
-						  	<%= f.text_field :sqft, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "950" %>						    
-						  </div>
-					</div>
-					<div class="form-group row">
-						  <label for="example-tel-input" class="col-xs-2 col-form-label home_edit">
-						  	pet(s)
-						  </label>
-						  <div class="col-xs-10">
-						  	<%= f.text_field :pets, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "2 male cats, Francois & Toulouse"%>
-						  </div>
-					</div>
-					<div class="form-group row">
-						  <label for="example-password-input" class="col-xs-2 col-form-label home_edit">capacity</label>
-						  <div class="col-xs-10">
-						  	<%= f.text_field :capacity, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "sleeps 1-4 adults" %>		    
-						  </div>
-					</div>
-
-					<div class="form-group fileinput">
-		            	<%= f.label :avatar, "photo", class: "col-xs-1 control-label home_edit_file_upload" %>
-			            <div class="col-xs-11">
-			              <div class="input-group edit_profile_file_field">
-			                <span class="input-group-btn">
-			                  <label class="btn btn-default btn-file">Browse...
-			                    <%= f.file_field :avatar, class: 'upload-btn' %>
-			                  </label>
-			                </span>
-			                <div class="form-control file_upload_area" readonly="" type="text">   	
-			                </div>
-			              </div>
-			            </div>
-		          	</div>
-					<div class="col-lg-10">
-					<div class="form-group row">
-                    	<label class="col-xs-2 col-form-label home_edit_radio">activate</label>
-                    	<div class="col-xs-10 radio_box">
-                      		<div class="radio">                        		
-                        		<!-- <input type="checkbox" name="house_listing[is_active]" id="optionsRadios1"> -->
-                        		<%= f.check_box :is_active %>
-                        		<label>
-                          			post my listing is for homeshare
-                        		</label>
-                      		</div>
-                    	</div>
-                  	</div>
-					<div class="form-group row">
-				      <div class="col-xs-2"></div>
-				      <div class="col-xs-8">				        
-				        <div class="actions">
-                      		<%= f.submit "save", class:"btn btn-default btn-sm housing_submit", data: {toggle: "modal", target: "#myModal"}%>
-							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-							  <div class="modal-dialog" role="document">
-							    <div class="modal-content" id="listing_success_modal">
-							      <div class="modal-header">
-							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							          <span aria-hidden="true">&times;</span>
-							        </button>
-							        <h4 class="modal-title" id="myModalLabel">success</h4>
-							      </div>
-							      <div class="modal-body">
-							        your homeshare listing was created. thanks for listing your place. happy travels!
-							      </div>
-							      <div class="modal-footer">
-							      	<%= link_to("back to home", "/", class:"btn btn-default btn-lg success_modal_buttons" ) %>								      
-							        <%= link_to("browse listings", home_listings_path, class:"btn btn-default btn-lg success_modal_buttons" ) %>
-							      </div>
-							    </div>
+						<div class="form-group row">
+						  	<label for="example-text-input" class="col-xs-2 col-form-label home_edit">location
+						  	</label>
+							 <div class="col-xs-10">
+							 	<%= f.text_field :location, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "city / state / country)" %>				    
 							  </div>
+						</div>
+						<div class="form-group row">
+							<label for="example-search-input" class="col-xs-2 col-form-label home_edit">beds
+							</label>
+							<div class="col-xs-10">
+								<%= f.text_field :beds, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "studio" %>	
 							</div>
-                  		</div>
-				      </div>
-				    </div>				     
-					<% end %>
-				</div> <!-- bd-example -->
-			</div> <!-- box_border_2 -->
-		</div> <!-- row  -->
-	</div> <!-- col md 8 -->
-	<div class="col-md-1"></div>
-</div>
+						</div>
+						<div class="form-group row">
+							  <label for="example-email-input" class="col-xs-2 col-form-label home_edit">baths
+							  </label>
+							  <div class="col-xs-10">
+							  	<%= f.text_field :baths, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "1.5" %>
+							  </div>
+						</div>
+						<div class="form-group row">
+							  <label for="example-url-input" class="col-xs-2 col-form-label home_edit">sq.ft</label>
+							  <div class="col-xs-10">
+							  	<%= f.text_field :sqft, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "950" %>						    
+							  </div>
+						</div>
+						<div class="form-group row">
+							  <label for="example-tel-input" class="col-xs-2 col-form-label home_edit">
+							  	pet(s)
+							  </label>
+							  <div class="col-xs-10">
+							  	<%= f.text_field :pets, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "2 male cats, Francois & Toulouse"%>
+							  </div>
+						</div>
+						<div class="form-group row">
+							  <label for="example-password-input" class="col-xs-2 col-form-label home_edit">capacity</label>
+							  <div class="col-xs-10">
+							  	<%= f.text_field :capacity, class:"form-control edit_home_profile_field", id:"exampleTextarea", placeholder: "sleeps 1-4 adults" %>		    
+							  </div>
+						</div>
+
+						<div class="form-group fileinput">
+			            	<%= f.label :avatar, "photo", class: "col-xs-1 control-label home_edit_file_upload" %>
+				            <div class="col-xs-11">
+				              <div class="input-group edit_profile_file_field">
+				                <span class="input-group-btn">
+				                  <label class="btn btn-default btn-file">Browse...
+				                    <%= f.file_field :avatar, class: 'upload-btn' %>
+				                  </label>
+				                </span>
+				                <div class="form-control file_upload_area" readonly="" type="text">   	
+				                </div>
+				              </div>
+				            </div>
+			          	</div>
+						<div class="col-lg-10">
+						<div class="form-group row">
+	                    	<label class="col-xs-2 col-form-label home_edit_radio">activate</label>
+	                    	<div class="col-xs-10 radio_box">
+	                      		<div class="radio">                        		
+	                        		<!-- <input type="checkbox" name="house_listing[is_active]" id="optionsRadios1"> -->
+	                        		<%= f.check_box :is_active %>
+	                        		<label>
+	                          			post my listing is for homeshare
+	                        		</label>
+	                      		</div>
+	                    	</div>
+	                  	</div>
+						<div class="form-group row">
+					      <div class="col-xs-2"></div>
+					      <div class="col-xs-8">				        
+					        <div class="actions">
+	                      		<%= f.submit "save", class:"btn btn-default btn-sm housing_submit", data: {toggle: "modal", target: "#myModal"}%>
+								<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-dialog" role="document">
+								    <div class="modal-content" id="listing_success_modal">
+								      <div class="modal-header">
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								        <h4 class="modal-title" id="myModalLabel">success</h4>
+								      </div>
+								      <div class="modal-body">
+								        your homeshare listing was created. thanks for listing your place. happy travels!
+								      </div>
+								      <div class="modal-footer">
+								      	<%= link_to("back to home", "/", class:"btn btn-default btn-lg success_modal_buttons" ) %>								      
+								        <%= link_to("browse listings", home_listings_path, class:"btn btn-default btn-lg success_modal_buttons" ) %>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+	                  		</div>
+					      </div>
+					    </div>				     
+						<% end %>
+					</div> <!-- bd-example -->
+				</div> <!-- box_border_2 -->
+			</div> <!-- row  -->
+		</div> <!-- col md 8 -->
+		<div class="col-md-1"></div>
+	</div>
+</body>
