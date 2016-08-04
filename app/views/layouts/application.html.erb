@@ -95,6 +95,9 @@
       </div>
     </div>  
     <div class="<%= @use_container_fluid ? 'container-fluid' : 'container' %>">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      
     	<%= yield %>
     </div>
   </body>
