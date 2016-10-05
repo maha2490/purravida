@@ -15,7 +15,6 @@
 }
 
 // ____________________HOME PAGE HEADER______________________________________
-
 .home_header {
 	background-color: #EEE;
 	height: 60px;
@@ -25,6 +24,7 @@
     height: 58px;
     width: 64%;
     margin-top: 7%;
+    margin-left: -35%;
 }
 .navbar_header_area {
 	text-align: center;
@@ -55,7 +55,7 @@
 	color: #777;
 }
 .fa-snapchat {
-	padding-right: 10%;
+	padding-right: 30%;
 	color: #777;
 }
 .icons {
@@ -95,7 +95,7 @@ html, body{
 	clear: both;
 }
 .home_page_body {
-    height: 100%;
+    height: 96%;
     background-color: white;
     overflow: hidden;
     min-height: 700px;
