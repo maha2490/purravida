@@ -6,15 +6,6 @@
     letter-spacing: -0.04em;
     line-height: 1.1em;
 }
-
-.purravida_tagline {
-	font-family: 'Lato', sans-serif;
-    font-size: 175%;
-    display: inline-block;
-    margin-left: 23%;
-}
-
-// ____________________HOME PAGE HEADER______________________________________
 .home_header {
 	background-color: #EEE;
 	height: 60px;
@@ -32,7 +23,7 @@
 .purravida_navbar_text {
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
-	margin-left: -20%;
+	margin-left: -27%;
     margin-top: 8%;
     font-size: 1.7em;
     letter-spacing: 1.5px; 
@@ -41,7 +32,6 @@
 	padding-top: 1%;
 	font-size: 100%;
 }
-
 .find_us{
 	display: inline;
 	padding-right: 10%;
@@ -100,6 +90,13 @@ html, body{
     overflow: hidden;
     min-height: 700px;
 }
+.purravida_tagline {
+    font-family: 'Lato', sans-serif;
+    font-size: 175%;
+    display: inline-block;
+    margin-left: 28%;
+}
+
 .picture-col {
     padding-right: 0;
     padding-left: 0
@@ -120,8 +117,8 @@ html, body{
     letter-spacing: 8px;
     line-height: 1.1em;
     display: inline-block;
-    font-size: 8em;
-    margin-top: 2%;
+    font-size: 10em;
+    margin-top: 8%;
     margin-left: 6%;
 }
 
@@ -291,8 +288,6 @@ html, body{
 #title-wrapper {
 	margin-top: 280px;
 }
-
-
 
 .purravida_logo {
 	margin-left: 1%;
