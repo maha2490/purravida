@@ -1,3 +1,5 @@
+// static.scss
+
 // ____________________HOME PAGE HEADER______________________________________
 .other_navbar_text {
 	font-family: 'Lato', sans-serif;
@@ -14,17 +16,6 @@
 
 // ____________________HOME PAGE HEADER______________________________________
 
-.picture-col {
-	padding-right: 0;
-	padding-left: 0;
-}
-#picture {
-	width: 100%;
-}
-#sunny_cat {
-	width: 100%;
-    margin-top: -8%;
-}
 .home_header {
 	background-color: #EEE;
 	height: 60px;
@@ -114,6 +105,23 @@ html, body{
 	display: block;
 	clear: both;
 }
+.home_page_body {
+    height: 142%;
+    background-color: white;
+    overflow: hidden;
+    min-height: 700px;
+}
+.picture-col {
+    padding-right: 0;
+    padding-left: 0
+}
+#picture {
+    width: 100%;
+}
+#sunny_cat {
+    width: 100%;
+    margin-top: -8%;
+}
 .home_page_body2{
 	height: 567px;
     background-color: #DF5312;
@@ -129,7 +137,7 @@ html, body{
     line-height: 1.1em;
     color: white;
     font-size: 175%;
-    margin-top: 16%;
+    margin-top: 13%;
     margin-bottom: 4%;
     text-align: center;
 }
@@ -174,7 +182,6 @@ html, body{
 	height: 675px;
 	background-color: white;
 	padding: 100px 0;
-    margin-bottom: 4%;
 	//padding-top: 10%;
 }
 .feature_icons {
@@ -185,13 +192,13 @@ html, body{
 	color: #37424A;
 }
 .plane {
-	margin-left: -3%;
+	margin-left: 5%;
 }
 .connect {
-    margin-left: -9%;
+    margin-left: 3%;
 }
 .sitting {
-    margin-left: -10%;
+    margin-left: 2%;
 }
 .travel_about {
 	margin-left: 20%;
@@ -313,13 +320,6 @@ html, body{
     background-color: rgba(134,187,191,0.7); // button blue
 }
 
-.home_page_body {
-	height: 100%;
-	background-color: white;
-	overflow: hidden;
-	min-height: 700px;
-}
-
 .container-fluid {
 	height: 100%;
 	width: 100%;
@@ -420,7 +420,7 @@ h2{
 }
 // end parallax
 
-
+// ____________________MEDIA QUERIES______________________________________
 
 
 
