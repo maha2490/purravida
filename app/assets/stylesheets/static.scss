@@ -184,6 +184,7 @@ html, body{
 	padding: 100px 0;
 	//padding-top: 10%;
 }
+
 .feature_icons {
 	margin-left: 7%;
 }
@@ -251,6 +252,7 @@ html, body{
     color: #777;
     letter-spacing: inherit;
 }
+
 .home_page_body4, .home_page_body5  {
 	width: 100vw;
 	height: 499px;
@@ -259,55 +261,15 @@ html, body{
 	margin-top: -4%;
 }
 
-.users_pic_box {
-	background-color: white;
-    margin-left: 2%;
-}
 .users_pics {
-    height: 25vw;
-    width: 105%;
-    height: 32vw;
+    width: 100%;
     overflow: hidden;
 }
-.users_pic1{
-    height: 32vw;
-    display: inline-block;
-    margin-left: -13%;
-    overflow: hidden;
-    -webkit-transition: all 300ms ease-out;
-    -moz-transition: all 300ms ease-out;
-    -o-transition: all 300ms ease-out;
-    -ms-transition: all 300ms ease-out;
-    transition: all 300ms ease-out;
 
-}
-.users_pic2{
-    height: 32vw;
-    width: 572px;
-}
-.users_pic3{
-    height: 32vw;
-    width: 119%;
-}
-.users_pic4{
-    height: 32vw;
-    width: 148%;
-    margin-left: -41%;
-    margin-top: -0.1%;
-}
-.users_pic5{
-    height: 32vw;
-    width: 119%;
-    margin-top: -0.1%;
-}
-.users_pic6{
-    height: 32vw;
-    width: 144%;
-    margin-top: -0.1%;    
-}
 .padding_fix {
 	padding-left: 0px;
 }
+
 .li_home {
 	margin-top: 127%;
     display: inline-block;
