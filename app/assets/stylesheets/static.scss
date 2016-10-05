@@ -22,11 +22,9 @@
 }
 
 .purravida_logo_header {
-	display: inline-block;
-    height: 43px;
-    width: 47%;
+    height: 58px;
+    width: 64%;
     margin-top: 7%;
-    text-align: center;
 }
 .navbar_header_area {
 	text-align: center;
@@ -35,13 +33,10 @@
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	margin-left: -20%;
-    margin-top: 3%;
-    font-size: 151%;
-    line-height: 1.1em;
-    letter-spacing: 1px;
-    line-height: 1.1em;
+    margin-top: 8%;
+    font-size: 1.7em;
+    letter-spacing: 1.5px; 
 }
-
 .home_sm_icons {
 	padding-top: 1%;
 	font-size: 100%;
@@ -51,7 +46,6 @@
 	display: inline;
 	padding-right: 10%;
 }
-
 .fa-instagram {
 	padding-right: 10%;
 	color: #777;
@@ -72,12 +66,10 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 1.1em;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    font-size: 120%;
+    margin-top: 11%;
+    margin-bottom: 12%;
+    font-size: 131%;
     color: #777;
-    padding-left: 3%;
-    padding-right: 3%;
     padding-top: 1%;
     display: inline-block;
 }
@@ -89,13 +81,10 @@
     padding-left: 12%;
     padding-right: 12%;
     margin-top: 17%;
-    margin-left: 12%;
     display: inline-block;
 }
 
-
 // ____________________HOME PAGE MAIN________________________________________
-
 html, body{
   height: 100%;
   background-color: #BDBFA4;
@@ -106,7 +95,7 @@ html, body{
 	clear: both;
 }
 .home_page_body {
-    height: 142%;
+    height: 100%;
     background-color: white;
     overflow: hidden;
     min-height: 700px;
@@ -122,13 +111,29 @@ html, body{
     width: 100%;
     margin-top: -8%;
 }
+
+#purravida_main_text {
+    font-family: 'Montserrat', sans-serif;
+    color: #37424A;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 8px;
+    line-height: 1.1em;
+    display: inline-block;
+    font-size: 8em;
+    margin-top: 2%;
+    margin-left: 6%;
+}
+
 .home_page_body2{
 	height: 567px;
     background-color: #DF5312;
 }
+
 #title-wrapper {
     margin-left: 5%;
 }
+
 #intro {
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
@@ -287,16 +292,7 @@ html, body{
 	margin-top: 280px;
 }
 
-#purravida_main_text {
-    font-family: 'Montserrat', sans-serif;
-    color: #37424A;
-    text-transform: uppercase;
-    text-align: right;
-    letter-spacing: 8px;
-    line-height: 1.1em;
-    display: inline-block;
-    font-size: 800%;
-}
+
 
 .purravida_logo {
 	margin-left: 1%;
