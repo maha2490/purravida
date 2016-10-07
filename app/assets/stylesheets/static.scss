@@ -374,7 +374,7 @@ h2{
 }
 @media screen and (max-width:400px) {
     .navbar {
-        width: 105vw;
+        width: 100vw;
     }
     .purravida_logo_header {
         height: 48px;
@@ -385,8 +385,8 @@ h2{
     }
     .home_page_body {
         margin-top: -3%;
-        height: 40%;
-        width: 104vw;
+        height: 39%;
+        width: 100vw;
         padding-top: 6%;
     }
     #sunny_cat {
@@ -413,7 +413,7 @@ h2{
     }
     .home_page_body2 {
         height: 75%;
-        width: 104vw;
+        width: 100vw;
         padding-top: 5%;
         padding-bottom: 5%;
     }
@@ -436,15 +436,15 @@ h2{
         margin-left: 34%;
     }
     .home_page_body3 {
-        height: 207%;
-        width: 104vw;
+        height: 226%;
+        width: 100vw;
         padding: 92px 0;
     }
     .feature_icons {
         text-align: center;
     }
     .feature_headings {
-        width: 104vw;
+        width: 100vw;
         font-size: 1.5em;
         text-align: center;
         margin-left: -13%;
@@ -466,29 +466,31 @@ h2{
         margin-left: 0;
     }
     .connect_about {
-        margin-top: 15%;
-        margin-bottom: 15%;
+        margin-top: 25%;
+        margin-bottom: 25%;
     }
     .connect {
         margin-left: -9%;
     }
     .sitting {
-        margin-left: -8%;
+        margin-left: -7%;
     }
     .home_page_body4 {
-        width: 104vw;
+        width: 100vw;
+        height: 36%;
     }
     .home_footer {
         height: 57px;
-        width: 104vw;
-        font-size: 0.9em;
+        width: 100vw;
+        font-size: 0.8em;
         margin-left: -4%;
     }
     .home_footer_inner {
-        height: 112%;
         margin-top: 7%;
         margin-left: -4%;
         height: 100%;
+        width: 100vw;
+        padding-top: 5%;
     }
 }
 
