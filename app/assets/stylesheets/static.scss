@@ -355,12 +355,15 @@ h2{
 }
 
 // ____________________MEDIA QUERIES______________________________________
+@media only screen and (max-width : 992px) {
+
+}
 
 @media screen and (max-width:768px) {
 
 
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:480px) {
     .navbar {
         width: 100vw;
     }
@@ -501,6 +504,73 @@ h2{
     }
 }
 
+@media only screen and (max-width : 320px) {
+    .purravida_logo_header {
+        height: 44px;
+        width: 17%;
+        margin-top: 0.5%;
+        margin-left: 2%;
+    }
+    .log_in_navbar {
+        margin-top: -16%;
+        margin-left: 70%;
+    }
+    .home_page_body {
+        height: 57%;
+    }
+    #title-wrapper {
+        width: 193px;
+    }
+    #purravida_main_text {
+        font-size: 2.2em;
+    }
+    .purravida_tagline {
+        font-size: 0.7em;
+        margin-left: 5%;
+    }
+    .home_page_body2 {
+        height: 133%;
+    }
+    #intro {
+        font-size: 1em;
+    }
+    #intro_p {
+        line-height: 159%;
+        padding: 5%;
+    }
+    .btn-lg.su_home {
+        font-size: 0.7em;
+        font-weight: bolder;
+    }
+    .home_page_body3 {
+        height: 280%;
+        padding: 54px 0;
+    }
+    .feature_headings {
+        width: 99vw;
+        font-size: 1.1em;
+    }
+    .feature_about {
+        font-size: 1em;
+        line-height: 159%;
+    }
+    .connect_about {
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+    .home_page_body4 {
+        height: 54%;
+    }
+    .home_page_body_footer {
+        padding: 0;
+    }
+
+    .home_footer {
+        height: 57px;
+        width: 101vw;
+        margin-left: -6%;
+    }
+}
 
 
 
