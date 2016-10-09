@@ -1,60 +1,37 @@
-<!-- HOMEPAGE index.html.erb -->	
-<div class="row home_page_body">
-	<div class="col-md-4 col-xs-4 picture-col">
+<!-- HOMEPAGE index.html.erb -->
+<div class="row section1">
+	<div class="col-xs-5 sunny_cat_col">
 		<div class="clearfix" id="picture">
 			<img id="sunny_cat" alt="sunny cat" src="/assets/travel_cat.jpeg"/>
 		</div>
 	</div>
-	<div id="purravida_heading">
-		<div class="col-md-8 col-xs-8 title_col">
-			<div class="clearfix" id="title-wrapper">
-				<div id="purravida_main_text">Purravida</div>
-				<!-- <img src="/assets/purravida-logo.gif" alt="logo" class="purravida_logo"> -->
-				<div class="purravida_tagline">Connecting cat-loving travelers</div>
-			</div>
-		</div>
+	<div class="col-xs-7 purravida_header">
+		<h1 id="purravida_main_text">Purravida</h1>
+		<p class="purravida_tagline">Connecting cat-loving travelers</p>
 	</div>
 </div>
-<div class="row home_page_body2">	
-	<div class="col-md-3"></div>
-	<div class="col-md-6 col-xs-12">		
-		<div class="purravida_about">
-			<p id="intro"> We know the routine </p>
+<div class="row section2">
+	<div class="col-xs-12 col-md-6 offset-md-3">
+			<h2 id="intro"> We know the routine </h2>
 			<p id="intro_p">
-				You're headed out of town and trying to find a reliable cat sitter. Going out of town shouldn't mean leaving your furry friend alone with an extra bowl of food (and you with anxiety). Purravida connects you with local cat sitters, a housing swap community, and the ability to meet some cool people in between. Join our network of feline loving explorers. 
+				You're headed out of town and trying to find a reliable cat sitter.  That shouldn't mean leaving your furry friend alone with an extra bowl of food (and you with anxiety). Purravida connects you with local cat sitters, a housing swap community, and the ability to meet some cool people in between. Join our network of feline loving explorers. 
 			</p>
 			<%= link_to("sign up", new_user_registration_path, class:"btn btn-default btn-lg su_home") %>
-		</div>
 	</div>
-	<div class="col-md-3"></div>
 </div>
-<div class="row home_page_body3">
-	<section class="feature_icons">	
-		<div class="col-md-4 col-xs-12">
-			<div class="travel_about">
-				<i class="fa fa-plane fa-6 plane" aria-hidden="true"></i>
-				<span class="feature_headings">TRAVEL</span>
-				<span class="feature_about">Search our homeshare, a house swap that is a double win for both you and your guest. In exchange for pet care, they get an awesome place to stay while traveling.</span> 
-			</div>
-		</div>
-		<div class="col-md-4 col-xs-12">
-			<div class="connect_about">
-				<i class="fa fa-hand-peace-o fa-6 connect" aria-hidden="true"></i>
-				<span class="feature_headings">CONNECT</span>
-				<span class="feature_about">Network with other users through our forums and homeshare community. Fellow cat people unite! </span>
-			</div>
-		</div>
-		<div class="col-md-4 col-xs-12">	
-			<div class="sitting_about">
-				<i class="fa fa-home fa-6 sitting" aria-hidden="true"></i>
-				<span class="feature_headings">SITTING</span>
-				<span class="feature_about">Quality pet siting is a necessity when on the go. Find local sitters, or start a cat sitting side hustle. </span>
-			</div>
-		</div>	
-	</section>	
+<div class="row section3">
+	<div class="col-xs-12 col-md-4">
+		feature 1
+	</div>
+	<div class="col-xs-12 col-md-4">
+		feature 2
+	</div>
+	<div class="col-xs-12 col-md-4">
+		feature 3
+	</div>
 </div>
-<div class="row home_page_body4">
-	<table class="table">
+<div class="row section4">
+ 	<!-- <table class="table">
   		<tr>
   			<td><%= image_tag('user3.png', class:"users_pics") %></td>
   			<td><%= image_tag('user1.png', class:"users_pics") %></td>
@@ -65,21 +42,11 @@
   			<td><%= image_tag('user2.png', class:"users_pics") %> </td>
   			<td><%= image_tag('user4.png', class:"users_pics") %></td>
   		</tr>
-	</table>
+	</table> -->
 </div>
-<div class="row home_page_body_footer">
-	<div class="col-md-12 col-xs-12">
-		<footer class="container home_footer">
-			<div class="home_footer_inner">
-				<a href="byrachelmahan.com">
-					<span> &copy; byrachelmahan.com </span>
-				</a>
-			</div>
-		</footer>
-	</div>
-</div>
-
-
-
-
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted">Place sticky footer content here.</p>
+  </div>
+</footer>
 

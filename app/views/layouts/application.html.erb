@@ -9,7 +9,6 @@
   </head>
 
   <body>
-   
     	<div class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header navbar_header_area">                                   
@@ -93,11 +92,10 @@
                <% end %>
             </ul>
           </div>
-        </div>
-      </div>  
+        </div> <!-- container-fluid for nav -->
+      </div> <!-- navbar -->
       <div class="<%= @use_container_fluid ? 'container-fluid' : 'container' %>">
       	<%= yield %>
       </div>
- 
   </body>
 </html>

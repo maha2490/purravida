@@ -1,0 +1,86 @@
+<!-- old index.html.erb -->
+<!-- HOMEPAGE index.html.erb -->	
+<div class="row home_page_body">
+	<div class="col-md-4 col-xs-4 picture-col">
+		<div class="clearfix" id="picture">
+			<img id="sunny_cat" alt="sunny cat" src="/assets/travel_cat.jpeg"/>
+		</div>
+	</div>
+	<div id="purravida_heading">
+		<div class="col-md-8 col-xs-8 title_col">
+			<div class="clearfix" id="title-wrapper">
+				<div id="purravida_main_text">Purravida</div>
+				<!-- <img src="/assets/purravida-logo.gif" alt="logo" class="purravida_logo"> -->
+				<div class="purravida_tagline">Connecting cat-loving travelers</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row home_page_body2">	
+	<div class="col-md-3"></div>
+	<div class="col-md-6 col-xs-12">		
+		<div class="purravida_about">
+			<p id="intro"> We know the routine </p>
+			<p id="intro_p">
+				You're headed out of town and trying to find a reliable cat sitter. Going out of town shouldn't mean leaving your furry friend alone with an extra bowl of food (and you with anxiety). Purravida connects you with local cat sitters, a housing swap community, and the ability to meet some cool people in between. Join our network of feline loving explorers. 
+			</p>
+			<%= link_to("sign up", new_user_registration_path, class:"btn btn-default btn-lg su_home") %>
+		</div>
+	</div>
+	<div class="col-md-3"></div>
+</div>
+<div class="row home_page_body3">
+	<section class="feature_icons">	
+		<div class="col-md-4 col-xs-12">
+			<div class="travel_about">
+				<i class="fa fa-plane fa-6 plane" aria-hidden="true"></i>
+				<span class="feature_headings">TRAVEL</span>
+				<span class="feature_about">Search our homeshare, a house swap that is a double win for both you and your guest. In exchange for pet care, they get an awesome place to stay while traveling.</span> 
+			</div>
+		</div>
+		<div class="col-md-4 col-xs-12">
+			<div class="connect_about">
+				<i class="fa fa-hand-peace-o fa-6 connect" aria-hidden="true"></i>
+				<span class="feature_headings">CONNECT</span>
+				<span class="feature_about">Network with other users through our forums and homeshare community. Fellow cat people unite! </span>
+			</div>
+		</div>
+		<div class="col-md-4 col-xs-12">	
+			<div class="sitting_about">
+				<i class="fa fa-home fa-6 sitting" aria-hidden="true"></i>
+				<span class="feature_headings">SITTING</span>
+				<span class="feature_about">Quality pet siting is a necessity when on the go. Find local sitters, or start a cat sitting side hustle. </span>
+			</div>
+		</div>	
+	</section>	
+</div>
+<div class="row home_page_body4">
+	<table class="table">
+  		<tr>
+  			<td><%= image_tag('user3.png', class:"users_pics") %></td>
+  			<td><%= image_tag('user1.png', class:"users_pics") %></td>
+  			<td><%= image_tag('user5.png', class:"users_pics") %></td>
+  		</tr>
+  		<tr>
+  			<td><%= image_tag('user6.png', class:"users_pics") %></td>
+  			<td><%= image_tag('user2.png', class:"users_pics") %> </td>
+  			<td><%= image_tag('user4.png', class:"users_pics") %></td>
+  		</tr>
+	</table>
+</div>
+<div class="row home_page_body_footer">
+	<div class="col-md-12 col-xs-12">
+		<footer class="container home_footer">
+			<div class="home_footer_inner">
+				<a href="byrachelmahan.com">
+					<span> &copy; byrachelmahan.com </span>
+				</a>
+			</div>
+		</footer>
+	</div>
+</div>
+
+
+
+
+
