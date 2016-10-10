@@ -288,15 +288,15 @@ footer {
     width: 100vw;
     text-align: center;
     margin-top: -2%;
-    border-top: thin double #37424a;
+    // border-top: thin double #37424a;
 }
 .footer_inner a{
-    font-size: 2vw;
+    font-size: 1.3vw;
     letter-spacing: 3px;
     color: white;
     display: inline-block;
-    margin-top: -1%;
-    margin-bottom: 2%
+    margin-top: 1%;
+    margin-bottom: 1%
 }
 
 
@@ -306,10 +306,69 @@ footer {
 // @media (min-width: 544px) { ... }
 
 // Medium devices (tablets, 768px and up)
-// @media (min-width: 768px) { ... }
+@media (min-width: 768px) { 
+    .fa {
+        font-size: 2em;
+    }
+    #login_box {
+        border: 3px solid;
+        border-radius: 20px;
+        border-color: #777;
+        width: 89px;
+        padding-left: 12%;
+        padding-right: 12%;
+        margin-top: 17%;
+        display: inline-block;
+    }
+    .log_in_navbar {
+        font-size: 2vw;
+    }
+ }
 
 // Large devices (desktops, 992px and up)
-// @media (min-width: 992px) { ... }
+@media (min-width: 992px) { 
+    .log_in_navbar {
+        font-size: 2vw;
+    }
+    #login_box {
+        width: 101%;    
+        padding-top: 2%;
+        padding-right: 8%;
+        margin-top: 14%;
+    }
+    .log_in_navbar {
+        font-size: 1vw;
+    }
+    #intro,
+    #intro_users  {
+        font-size: 3.1vw;
+    }
+    #intro_p,
+    .feature_about {
+        font-size: 1.4vw;
+    }
+    .feature_headings {
+        font-size: 3.1vw;
+    }
+}
 
 // Extra large devices (large desktops, 1200px and up)
-// @media (min-width: 1200px) { ... }
+@media (min-width: 1200px) { 
+    #login_box {
+        margin-top: 21%;
+    }
+    .log_in_navbar {
+        font-size: 1vw;
+    }
+    #intro,
+    #intro_users  {
+        font-size: 3.1vw;
+    }
+    #intro_p,
+    .feature_about {
+        font-size: 1.4vw;
+    }
+    .feature_headings {
+        font-size: 3.1vw;
+    }
+}
