@@ -179,7 +179,8 @@
 // section4_______________
 .row.section4 {
     background-color: #DF5312;
-    width: 102vw;
+    width: 100vw;
+    overflow: auto;
 }
 #intro_users {
     font-family: 'Montserrat', sans-serif;
@@ -211,6 +212,7 @@
     margin-bottom: 0;
     margin-left: 1.5%;
     border: none;
+    table-layout: fixed;
 }
 .thumbnail {
     position:relative;
@@ -243,7 +245,6 @@
     // width: 120%;
     // margin-left: -10%;
 }
-
 .caption p {
     font-family: 'Lato', sans-serif;
     font-size: 2vw;
@@ -255,22 +256,26 @@
 // footer_______________
 footer {
     width: 100vw;
-    margin-left: -7%;
+    margin-top: 3%;
 }
-.footer_outer {
-    background-color: #DF5312;
-    color: white;
-    display: inline-block;
-    width: 103.5vw;
-    height: 30px;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-}
+// .footer_outer {
+//     background-color: #f1824f;
+//     color: white;
+//     display: inline-block;
+//     width: 100vw;
+//     height: 8px;
+//     font-family: 'Lato', sans-serif;
+//     // margin-left: 1.5%;
+// }
 .footer_inner {
+    // background-color: #DF5312;
     background-color: #f1824f;
-    width: 105vw;
-    margin-top: 5%;
-    margin-left: -7%;
+    width: 100vw;
+    text-align: center;
+    margin-top: -2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    // margin-left: 1.5%;
 }
 .footer_inner a{
     font-size: 2vw;
