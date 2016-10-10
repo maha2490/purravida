@@ -48,7 +48,8 @@
 }
 .purravida_header {
     padding: 0;
-    margin-top: 23%;
+    margin-top: 25%;
+    margin-left: -3%;
 }
 #purravida_main_text {
     font-family: 'Montserrat', sans-serif;
@@ -81,7 +82,7 @@
     line-height: 0.1em;
     color: white;
     font-size: 5.1vw;
-    margin-top: 20%;
+    margin-top: 25%;
     margin-bottom: 4%;
     text-align: center;
 }
@@ -120,7 +121,7 @@
     letter-spacing: 0.2px;
     width: 42%;
     margin-top: 2%;
-    margin-bottom: 16%;
+    margin-bottom: 19%;
     margin-left: 29%;
 }
 
@@ -189,9 +190,34 @@
     line-height: 0.1em;
     color: white;
     font-size: 5.1vw;
-    margin-top: 10%;
-    margin-bottom: 7%;
+    margin-top: 20%;
     text-align: center;
+}
+#intro_users:after {
+    content:' ';
+    display:block;
+    border:2px solid #37424A;
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    width: 24%;
+    margin-top: 8%;
+    margin-bottom: 4%;
+    margin-left: 38%;
+}
+#intro_users_p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 4.4vw;
+    text-align: center;
+    line-height: 1.42857143;
+    letter-spacing: 0.2px;
+    margin-left: 11%;
+    margin-right: 11%;
 }
 .users_pics {
     width: 100%;
@@ -241,9 +267,6 @@
     position: relative;
     padding: 10px;
     margin-top: 10%;
-    // background: rgba(0, 0, 0, 0.6);
-    // width: 120%;
-    // margin-left: -10%;
 }
 .caption p {
     font-family: 'Lato', sans-serif;
@@ -256,33 +279,23 @@
 // footer_______________
 footer {
     width: 100vw;
-    margin-top: 3%;
+    margin-top: 16%;
 }
-// .footer_outer {
-//     background-color: #f1824f;
-//     color: white;
-//     display: inline-block;
-//     width: 100vw;
-//     height: 8px;
-//     font-family: 'Lato', sans-serif;
-//     // margin-left: 1.5%;
-// }
 .footer_inner {
     // background-color: #DF5312;
     background-color: #f1824f;
     width: 100vw;
     text-align: center;
     margin-top: -2%;
-    padding-left: 4%;
-    padding-right: 4%;
-    // margin-left: 1.5%;
+    border-top: thin double #37424a;
 }
 .footer_inner a{
     font-size: 2vw;
+    letter-spacing: 3px;
     color: white;
     display: inline-block;
-    margin-top: 1%;
-    letter-spacing: 3px;
+    margin-top: -1%;
+    margin-bottom: 2%
 }
 
 
